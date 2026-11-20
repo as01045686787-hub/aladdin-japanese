@@ -33,7 +33,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 #source::placeholder{color:#777}
 #voiceIn{position:absolute;right:12px;top:12px;width:52px;height:52px;border:2px solid var(--line);border-radius:50%;background:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;padding:0}
 #voiceIn.on{background:#dc2626;border-color:#dc2626;color:#fff}
-.langs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.langs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
 .langs button{min-height:46px;border:2px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);font:inherit;font-size:17px;font-weight:700}
 .langs button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .btn{min-height:56px;border:2px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font:inherit;font-size:18px;font-weight:700;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
@@ -99,9 +99,10 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
         <textarea id="source" placeholder="예: 이 메뉴는 무엇인가요?" aria-label="번역할 내용"></textarea>
         <button id="voiceIn" type="button" aria-label="말하기">🎤</button>
       </div>
-      <div class="langs" role="group" aria-label="말하기 언어">
-        <button id="langKo" type="button" aria-pressed="true">말하기: 한국어</button>
-        <button id="langJa" type="button" aria-pressed="false">말하기: 일본어</button>
+      <div class="langs" role="group" aria-label="말하기 언어와 지우기">
+        <button id="langKo" type="button" aria-pressed="true">한국어</button>
+        <button id="langJa" type="button" aria-pressed="false">일본어</button>
+        <button id="clearBtn" type="button">지우기</button>
       </div>
       <button id="translateBtn" class="btn primary" type="button">번역하기</button>
 
@@ -113,8 +114,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
         </div>
       </div>
     </div>
-    <button id="clearBtn" class="linkish" type="button">입력 지우기</button>
-    <p class="note">번역은 인터넷 연결이 필요합니다. 공식 번역 서비스가 아닌 방식을 쓰므로 언제든 멈출 수 있습니다. 말하기는 크롬 등 음성 인식을 지원하는 브라우저에서 마이크 권한을 허용해야 합니다.</p>
+        <p class="note">번역은 인터넷 연결이 필요합니다. 공식 번역 서비스가 아닌 방식을 쓰므로 언제든 멈출 수 있습니다. 말하기는 크롬 등 음성 인식을 지원하는 브라우저에서 마이크 권한을 허용해야 합니다.</p>
   </section>
 
   <!-- 단어장 -->
