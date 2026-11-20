@@ -28,14 +28,11 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 
 /* 카드 */
 .card{border:2px solid var(--line);border-radius:20px;padding:14px;background:#fff}
-.inbox{position:relative}
-#source{display:block;width:100%;min-height:124px;border:2px solid var(--line);border-radius:16px;padding:16px 70px 16px 16px;font:inherit;font-size:20px;line-height:1.45;color:var(--ink);background:#fff;resize:none}
+#source{display:block;width:100%;min-height:124px;border:2px solid var(--line);border-radius:16px;padding:16px;font:inherit;font-size:20px;line-height:1.45;color:var(--ink);background:#fff;resize:none}
 #source::placeholder{color:#777}
-#voiceIn{position:absolute;right:12px;top:12px;width:52px;height:52px;border:2px solid var(--line);border-radius:50%;background:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;padding:0}
-#voiceIn.on{background:#dc2626;border-color:#dc2626;color:#fff}
+.langs button.on{background:#dc2626;border-color:#dc2626;color:#fff}
 .langs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
 .langs button{min-height:46px;border:2px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);font:inherit;font-size:17px;font-weight:700}
-.langs button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .btn{min-height:56px;border:2px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font:inherit;font-size:18px;font-weight:700;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-size:20px;font-weight:800;margin-top:12px}
 .btn.small{min-height:48px;font-size:16px;width:auto;padding:0 12px}
@@ -93,29 +90,26 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
   <!-- 번역 -->
   <section id="translate" class="panel active">
     <h2>번역</h2>
-    <p class="guide">한국어나 일본어를 입력하거나, 🎤을 눌러 말해 보세요.</p>
     <div class="card">
       <div class="inbox">
         <textarea id="source" placeholder="예: 이 메뉴는 무엇인가요?" aria-label="번역할 내용"></textarea>
-        <button id="voiceIn" type="button" aria-label="말하기">🎤</button>
       </div>
       <div class="langs" role="group" aria-label="말하기 언어와 지우기">
-        <button id="langKo" type="button" aria-pressed="true">한국어</button>
-        <button id="langJa" type="button" aria-pressed="false">일본어</button>
+        <button id="langKo" type="button" >한국어</button>
+        <button id="langJa" type="button" >일본어</button>
         <button id="clearBtn" type="button">지우기</button>
       </div>
       <button id="translateBtn" class="btn primary" type="button">번역하기</button>
 
       <div class="out">
-        <div id="result" class="placeholder">번역 결과가 여기에 나옵니다.</div>
+        <div id="result" class="placeholder"></div>
         <div class="actions">
           <button id="speakBtn" class="btn" type="button">🔊 듣기</button>
           <button id="saveBtn" class="btn" type="button">＋ 저장</button>
         </div>
       </div>
     </div>
-        <p class="note">번역은 인터넷 연결이 필요합니다. 공식 번역 서비스가 아닌 방식을 쓰므로 언제든 멈출 수 있습니다. 말하기는 크롬 등 음성 인식을 지원하는 브라우저에서 마이크 권한을 허용해야 합니다.</p>
-  </section>
+      </section>
 
   <!-- 단어장 -->
   <section id="saved" class="panel">
@@ -126,13 +120,12 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
       <label class="btn small" style="cursor:pointer">백업 불러오기<input id="importFile" type="file" accept=".json" class="hidden"></label>
     </div>
     <div id="list"></div>
-    <div id="listEmpty" class="empty">아직 저장한 표현이 없어요.<br>번역 탭에서 ＋ 저장을 누르면 여기에 모입니다.</div>
-  </section>
+      </section>
 
   <!-- 복습 -->
   <section id="study" class="panel">
     <h2>복습</h2>
-    <div id="flash" class="flash">단어장에 표현을 저장하면<br>여기서 복습할 수 있어요.</div>
+    <div id="flash" class="flash"></div>
     <div class="actions">
       <button id="revealBtn" class="btn" type="button">뜻 보기</button>
       <button id="nextBtn" class="btn primary" style="margin-top:0" type="button">다음 표현</button>
@@ -142,7 +135,6 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
   <!-- 사진 -->
   <section id="photo" class="panel">
     <h2>사진 번역</h2>
-    <p class="guide">메뉴판이나 간판을 찍거나 사진을 골라 주세요.</p>
     <div class="photo-btns">
       <label class="primary">📷 바로 찍기<input id="cameraFile" type="file" accept="image/*" capture="environment" class="hidden"></label>
       <label>사진 고르기<input id="galleryFile" type="file" accept="image/*" class="hidden"></label>
@@ -158,8 +150,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
     </div>
 
     <button id="ocrBtn" class="btn primary" type="button">사진 글자 읽기</button>
-    <div id="ocrResult" class="card ocr-result" style="margin-top:14px;min-height:110px">사진을 고른 뒤 글자 읽기를 누르세요.</div>
-    <p class="note">사진 글자 읽기는 인터넷에서 읽기 엔진을 불러옵니다. 글자가 크고 선명할수록 잘 읽힙니다.</p>
+    <div id="ocrResult" class="card ocr-result" style="margin-top:14px;min-height:110px"></div>
   </section>
 
 </main>
@@ -185,34 +176,32 @@ async function translate(s){
 }
 function showResult(text,cls){const el=$("result");el.textContent=text;el.className=cls||""}
 $("translateBtn").onclick=async()=>{const s=$("source").value;showResult("번역 중…","placeholder");try{lastJp=await translate(s);showResult(lastJp)}catch(e){showResult(e.message+" 인터넷 연결을 확인하세요.","placeholder")}};
-$("clearBtn").onclick=()=>{$("source").value="";showResult("번역 결과가 여기에 나옵니다.","placeholder");lastJp=""};
+$("clearBtn").onclick=()=>{$("source").value="";showResult("","placeholder");lastJp=""};
 $("speakBtn").onclick=()=>{const t=lastJp||$("result").textContent;if(!t||t.startsWith("번역"))return;const u=new SpeechSynthesisUtterance(t);u.lang=/[ぁ-んァ-ン一-龯]/.test(t)?"ja-JP":"ko-KR";speechSynthesis.speak(u)};
-let voiceLang="ko-KR";
-function setVoiceLang(l){voiceLang=l;$("langKo").setAttribute("aria-pressed",l==="ko-KR");$("langJa").setAttribute("aria-pressed",l==="ja-JP")}
-$("langKo").onclick=()=>setVoiceLang("ko-KR");
-$("langJa").onclick=()=>setVoiceLang("ja-JP");
-$("voiceIn").onclick=()=>{
+function listen(lang,btn){
  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
  if(!SR){alert("이 브라우저는 말하기를 지원하지 않습니다. 크롬을 써 주세요.");return}
- const r=new SR();r.lang=voiceLang;r.interimResults=false;r.maxAlternatives=1;
- const mic=$("voiceIn"),src=$("source"),ph=src.placeholder;
- r.onstart=()=>{mic.classList.add("on");mic.setAttribute("aria-label","듣는 중");src.placeholder="듣고 있어요… 말씀해 주세요";};
- const done=()=>{mic.classList.remove("on");mic.setAttribute("aria-label","말하기");src.placeholder=ph;};
+ const r=new SR();r.lang=lang;r.interimResults=false;r.maxAlternatives=1;
+ const src=$("source"),ph=src.placeholder;
+ r.onstart=()=>{btn.classList.add("on");src.placeholder="듣고 있어요… 말씀해 주세요";};
+ const done=()=>{btn.classList.remove("on");src.placeholder=ph;};
  r.onresult=e=>{src.value=e.results[0][0].transcript;};
  r.onerror=e=>{done();if(e.error!=="no-speech"&&e.error!=="aborted")alert("말하기에 실패했습니다. 마이크 권한과 인터넷 연결을 확인하세요.");};
  r.onend=done;
- try{r.start()}catch(err){done();alert("말하기를 다시 눌러 주세요.")}
-};
+ try{r.start()}catch(err){done();alert("다시 한 번 눌러 주세요.")}
+}
+$("langKo").onclick=()=>listen("ko-KR",$("langKo"));
+$("langJa").onclick=()=>listen("ja-JP",$("langJa"));
 function persist(){localStorage.setItem("jphelper_items",JSON.stringify(items));renderList()}
 $("saveBtn").onclick=()=>{const ko=$("source").value.trim(),jp=$("result").textContent.trim();if(!ko||!jp||jp.startsWith("번역")){alert("먼저 번역을 완료하세요.");return}items.unshift({ko,jp,created:Date.now()});persist();alert("단어장에 저장했습니다.")};
-function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTML="";const shown=items.filter(x=>(x.ko+x.jp).toLowerCase().includes(q));$("listEmpty").classList.toggle("hidden",items.length>0);shown.forEach(x=>{const d=document.createElement("div");d.className="item";const a=document.createElement("div");a.className="jp";a.textContent=x.jp;const b=document.createElement("div");b.className="ko";b.textContent=x.ko;const c=document.createElement("div");c.className="acts";const edit=document.createElement("button");edit.textContent="고치기";edit.onclick=()=>{const n=prompt("일본어 표현 고치기",x.jp);if(n!==null){x.jp=n;persist()}};const del=document.createElement("button");del.textContent="지우기";del.onclick=()=>{if(confirm("이 표현을 지울까요?")){items.splice(items.indexOf(x),1);persist()}};c.append(edit,del);d.append(a,b,c);$("list").append(d)})}
+function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTML="";const shown=items.filter(x=>(x.ko+x.jp).toLowerCase().includes(q));shown.forEach(x=>{const d=document.createElement("div");d.className="item";const a=document.createElement("div");a.className="jp";a.textContent=x.jp;const b=document.createElement("div");b.className="ko";b.textContent=x.ko;const c=document.createElement("div");c.className="acts";const edit=document.createElement("button");edit.textContent="고치기";edit.onclick=()=>{const n=prompt("일본어 표현 고치기",x.jp);if(n!==null){x.jp=n;persist()}};const del=document.createElement("button");del.textContent="지우기";del.onclick=()=>{if(confirm("이 표현을 지울까요?")){items.splice(items.indexOf(x),1);persist()}};c.append(edit,del);d.append(a,b,c);$("list").append(d)})}
 $("search").oninput=renderList;
 $("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="일본어_단어장.json";a.click();URL.revokeObjectURL(a.href)};
 $("importFile").onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(Array.isArray(data)){items=[...data,...items];persist();alert("가져왔습니다.")}}catch{alert("올바른 백업 파일이 아닙니다.")}};
-function next(){if(!items.length){$("flash").textContent="먼저 번역한 표현을 단어장에 저장하세요.";return}current=Math.floor(Math.random()*items.length);$("flash").textContent=items[current].jp}
+function next(){if(!items.length)return;current=Math.floor(Math.random()*items.length);$("flash").textContent=items[current].jp}
 $("nextBtn").onclick=next;$("revealBtn").onclick=()=>{if(current>=0)$("flash").textContent=items[current].jp+"\n"+items[current].ko};
 let selectedPhoto=null;
-function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();$("ocrResult").textContent="사진을 골랐습니다. 글자 읽기를 누르세요."}
+function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();}
 $("cameraFile").onchange=e=>usePhoto(e.target.files[0]);
 $("galleryFile").onchange=e=>usePhoto(e.target.files[0]);
 function setZoom(){$("preview").style.transform="scale("+zoom+")"}
