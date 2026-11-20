@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="일본어 단어와 문장을 번역하고, 듣고, 저장하는 도우미 앱">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<title>일본어 도우미</title>
+<style>
+*{box-sizing:border-box}
+:root{--ink:#000;--line:#000;--accent:#1d4ed8;--sub:#444;--paper:#fff}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif}
+body{min-height:100vh;padding-bottom:96px}
+
+/* 상단 */
+.top{padding:18px 20px 8px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.top h1{margin:0;font-size:26px;font-weight:800}
+#installApp{border:2px solid var(--line);background:#fff;border-radius:14px;min-height:44px;padding:0 14px;font-size:16px;font-weight:700;display:none}
+
+/* 화면 전환 */
+main{padding:0 16px 16px}
+.panel{display:none}
+.panel.active{display:block}
+h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
+.guide{font-size:16px;color:var(--sub);margin:-4px 2px 14px;line-height:1.5}
+
+/* 카드 */
+.card{border:2px solid var(--line);border-radius:20px;padding:14px;background:#fff}
+.inbox{position:relative}
+#source{display:block;width:100%;min-height:124px;border:2px solid var(--line);border-radius:16px;padding:16px 70px 16px 16px;font:inherit;font-size:20px;line-height:1.45;color:var(--ink);background:#fff;resize:none}
+#source::placeholder{color:#777}
+#voiceIn{position:absolute;right:12px;top:12px;width:52px;height:52px;border:2px solid var(--line);border-radius:50%;background:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;padding:0}
+.btn{min-height:56px;border:2px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font:inherit;font-size:18px;font-weight:700;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-size:20px;font-weight:800;margin-top:12px}
+.btn.small{min-height:48px;font-size:16px;width:auto;padding:0 12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.linkish{display:block;margin:12px auto 0;background:none;border:0;font:inherit;font-size:16px;font-weight:700;color:var(--sub);text-decoration:underline;padding:8px}
+
+/* 결과 */
+.out{margin-top:16px;border-top:2px dashed var(--line);padding-top:16px;min-height:150px}
+#result{font-size:26px;font-weight:800;line-height:1.4;white-space:pre-wrap;word-break:break-word;min-height:58px}
+.placeholder{color:#777;font-size:18px;font-weight:600}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.note{font-size:14px;color:var(--sub);line-height:1.55;margin:14px 2px 0}
+
+/* 목록·복습 */
+.search{width:100%;min-height:56px;border:2px solid var(--line);border-radius:16px;padding:0 16px;font:inherit;font-size:18px;color:var(--ink);background:#fff}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 4px}
+#list{margin-top:8px}
+.item{border:2px solid var(--line);border-radius:18px;padding:14px;margin-top:12px}
+.item .jp{font-size:22px;font-weight:800;line-height:1.35;word-break:break-word}
+.item .ko{font-size:17px;color:var(--sub);margin-top:6px;line-height:1.45}
+.item .acts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.item .acts button{min-height:48px;border:2px solid var(--line);border-radius:12px;background:#fff;font:inherit;font-size:16px;font-weight:700}
+.empty{border:2px dashed var(--line);border-radius:18px;padding:22px 16px;font-size:18px;line-height:1.6;text-align:center;margin-top:14px}
+.flash{border:2px solid var(--line);border-radius:20px;padding:20px 16px;min-height:170px;font-size:24px;font-weight:800;line-height:1.5;white-space:pre-wrap;word-break:break-word;display:flex;align-items:center;justify-content:center;text-align:center}
+
+/* 사진 */
+.photo-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.photo-btns label{min-height:64px;border:2px solid var(--line);border-radius:16px;background:#fff;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+.photo-btns label.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.hidden{display:none!important}
+.preview{margin-top:14px;border:2px solid var(--line);border-radius:16px;overflow:hidden;height:300px;background:#fff;position:relative}
+.preview .view{width:100%;height:100%;overflow:auto;display:flex}
+#preview{margin:auto;max-width:none;width:100%;transform-origin:center center;transition:transform .15s}
+.zoombar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}
+.zoombar button{min-height:52px;border:2px solid var(--line);border-radius:14px;background:#fff;font:inherit;font-size:17px;font-weight:700}
+.ocr-result{white-space:pre-wrap;word-break:break-word;font-size:18px;line-height:1.55;font-weight:600}
+
+/* 아래 메뉴 */
+.tabs{position:fixed;left:0;right:0;bottom:0;height:84px;display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-top:2px solid var(--line);z-index:5;padding-bottom:env(safe-area-inset-bottom)}
+.tab{border:0;background:#fff;color:var(--sub);font:inherit;font-size:15px;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.tab .ic{font-size:26px;line-height:1}
+.tab.active{color:var(--accent)}
+.tab.active .ic{transform:scale(1.08)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1>일본어 도우미</h1>
+  <button id="installApp" type="button">앱 설치</button>
+</header>
+
+<main>
+
+  <!-- 번역 -->
+  <section id="translate" class="panel active">
+    <h2>번역</h2>
+    <p class="guide">한국어나 일본어를 입력하거나, 🎤을 눌러 말해 보세요.</p>
+    <div class="card">
+      <div class="inbox">
+        <textarea id="source" placeholder="예: 이 메뉴는 무엇인가요?" aria-label="번역할 내용"></textarea>
+        <button id="voiceIn" type="button" aria-label="말하기">🎤</button>
+      </div>
+      <button id="translateBtn" class="btn primary" type="button">번역하기</button>
+
+      <div class="out">
+        <div id="result" class="placeholder">번역 결과가 여기에 나옵니다.</div>
+        <div class="actions">
+          <button id="speakBtn" class="btn" type="button">🔊 듣기</button>
+          <button id="saveBtn" class="btn" type="button">＋ 저장</button>
+        </div>
+      </div>
+    </div>
+    <button id="clearBtn" class="linkish" type="button">입력 지우기</button>
+    <p class="note">번역은 인터넷 연결이 필요합니다. 공식 번역 서비스가 아닌 방식을 쓰므로 언제든 멈출 수 있습니다. 말하기는 크롬 등 음성 인식을 지원하는 브라우저에서 마이크 권한을 허용해야 합니다.</p>
+  </section>
+
+  <!-- 단어장 -->
+  <section id="saved" class="panel">
+    <h2>내 단어장</h2>
+    <input id="search" class="search" type="search" placeholder="한국어나 일본어로 찾기" aria-label="단어장 검색">
+    <div class="tools">
+      <button id="exportBtn" class="btn small" type="button">백업 저장</button>
+      <label class="btn small" style="cursor:pointer">백업 불러오기<input id="importFile" type="file" accept=".json" class="hidden"></label>
+    </div>
+    <div id="list"></div>
+    <div id="listEmpty" class="empty">아직 저장한 표현이 없어요.<br>번역 탭에서 ＋ 저장을 누르면 여기에 모입니다.</div>
+  </section>
+
+  <!-- 복습 -->
+  <section id="study" class="panel">
+    <h2>복습</h2>
+    <div id="flash" class="flash">단어장에 표현을 저장하면<br>여기서 복습할 수 있어요.</div>
+    <div class="actions">
+      <button id="revealBtn" class="btn" type="button">뜻 보기</button>
+      <button id="nextBtn" class="btn primary" style="margin-top:0" type="button">다음 표현</button>
+    </div>
+  </section>
+
+  <!-- 사진 -->
+  <section id="photo" class="panel">
+    <h2>사진 번역</h2>
+    <p class="guide">메뉴판이나 간판을 찍거나 사진을 골라 주세요.</p>
+    <div class="photo-btns">
+      <label class="primary">📷 바로 찍기<input id="cameraFile" type="file" accept="image/*" capture="environment" class="hidden"></label>
+      <label>사진 고르기<input id="galleryFile" type="file" accept="image/*" class="hidden"></label>
+    </div>
+
+    <div id="previewWrap" class="hidden">
+      <div class="preview"><div class="view"><img id="preview" alt="선택한 사진"></div></div>
+      <div class="zoombar">
+        <button id="zoomOut" type="button">작게 −</button>
+        <button id="zoomReset" type="button">원래대로</button>
+        <button id="zoomIn" type="button">크게 +</button>
+      </div>
+    </div>
+
+    <button id="ocrBtn" class="btn primary" type="button">사진 글자 읽기</button>
+    <div id="ocrResult" class="card ocr-result" style="margin-top:14px;min-height:110px">사진을 고른 뒤 글자 읽기를 누르세요.</div>
+    <p class="note">사진 글자 읽기는 인터넷에서 읽기 엔진을 불러옵니다. 글자가 크고 선명할수록 잘 읽힙니다.</p>
+  </section>
+
+</main>
+
+<nav class="tabs" aria-label="메뉴">
+  <button class="tab active" data-tab="translate" type="button"><span class="ic">🌐</span>번역</button>
+  <button class="tab" data-tab="saved" type="button"><span class="ic">📖</span>단어장</button>
+  <button class="tab" data-tab="study" type="button"><span class="ic">🔁</span>복습</button>
+  <button class="tab" data-tab="photo" type="button"><span class="ic">📷</span>사진</button>
+</nav>
+
+<script>
+const $=id=>document.getElementById(id);
+let lastJp="",items=JSON.parse(localStorage.getItem("jphelper_items")||"[]"),current=-1,zoom=1;
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab,.panel").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(b.dataset.tab).classList.add("active");if(b.dataset.tab==="saved")renderList()});
+function detect(s){return /[ぁ-んァ-ン一-龯]/.test(s)?"ja":"ko"}
+async function translate(s){
+ if(!s.trim()) throw Error("번역할 내용을 입력하세요.");
+ const sl=detect(s)==="ja"?"ja":"ko",tl=sl==="ja"?"ko":"ja";
+ const u="https://translate.googleapis.com/translate_a/single?client=gtx&sl="+sl+"&tl="+tl+"&dt=t&q="+encodeURIComponent(s);
+ const r=await fetch(u);if(!r.ok)throw Error("번역 서버에 연결하지 못했습니다.");
+ const d=await r.json();return d[0].map(x=>x[0]).join("");
+}
+function showResult(text,cls){const el=$("result");el.textContent=text;el.className=cls||""}
+$("translateBtn").onclick=async()=>{const s=$("source").value;showResult("번역 중…","placeholder");try{lastJp=await translate(s);showResult(lastJp)}catch(e){showResult(e.message+" 인터넷 연결을 확인하세요.","placeholder")}};
+$("clearBtn").onclick=()=>{$("source").value="";showResult("번역 결과가 여기에 나옵니다.","placeholder");lastJp=""};
+$("speakBtn").onclick=()=>{const t=lastJp||$("result").textContent;if(!t||t.startsWith("번역"))return;const u=new SpeechSynthesisUtterance(t);u.lang=/[ぁ-んァ-ン一-龯]/.test(t)?"ja-JP":"ko-KR";speechSynthesis.speak(u)};
+$("voiceIn").onclick=()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){alert("이 브라우저는 말하기를 지원하지 않습니다. 크롬을 써 주세요.");return}const r=new SR();r.lang="ko-KR";r.onresult=e=>$("source").value=e.results[0][0].transcript;r.onerror=()=>alert("마이크 권한과 브라우저 설정을 확인하세요.");r.start()};
+function persist(){localStorage.setItem("jphelper_items",JSON.stringify(items));renderList()}
+$("saveBtn").onclick=()=>{const ko=$("source").value.trim(),jp=$("result").textContent.trim();if(!ko||!jp||jp.startsWith("번역")){alert("먼저 번역을 완료하세요.");return}items.unshift({ko,jp,created:Date.now()});persist();alert("단어장에 저장했습니다.")};
+function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTML="";const shown=items.filter(x=>(x.ko+x.jp).toLowerCase().includes(q));$("listEmpty").classList.toggle("hidden",items.length>0);shown.forEach(x=>{const d=document.createElement("div");d.className="item";const a=document.createElement("div");a.className="jp";a.textContent=x.jp;const b=document.createElement("div");b.className="ko";b.textContent=x.ko;const c=document.createElement("div");c.className="acts";const edit=document.createElement("button");edit.textContent="고치기";edit.onclick=()=>{const n=prompt("일본어 표현 고치기",x.jp);if(n!==null){x.jp=n;persist()}};const del=document.createElement("button");del.textContent="지우기";del.onclick=()=>{if(confirm("이 표현을 지울까요?")){items.splice(items.indexOf(x),1);persist()}};c.append(edit,del);d.append(a,b,c);$("list").append(d)})}
+$("search").oninput=renderList;
+$("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="일본어_단어장.json";a.click();URL.revokeObjectURL(a.href)};
+$("importFile").onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(Array.isArray(data)){items=[...data,...items];persist();alert("가져왔습니다.")}}catch{alert("올바른 백업 파일이 아닙니다.")}};
+function next(){if(!items.length){$("flash").textContent="먼저 번역한 표현을 단어장에 저장하세요.";return}current=Math.floor(Math.random()*items.length);$("flash").textContent=items[current].jp}
+$("nextBtn").onclick=next;$("revealBtn").onclick=()=>{if(current>=0)$("flash").textContent=items[current].jp+"\n"+items[current].ko};
+let selectedPhoto=null;
+function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();$("ocrResult").textContent="사진을 골랐습니다. 글자 읽기를 누르세요."}
+$("cameraFile").onchange=e=>usePhoto(e.target.files[0]);
+$("galleryFile").onchange=e=>usePhoto(e.target.files[0]);
+function setZoom(){$("preview").style.transform="scale("+zoom+")"}
+$("zoomIn").onclick=()=>{zoom=Math.min(zoom+.25,3);setZoom()};
+$("zoomOut").onclick=()=>{zoom=Math.max(zoom-.25,1);setZoom()};
+$("zoomReset").onclick=()=>{zoom=1;setZoom()};
+$("ocrBtn").onclick=async()=>{
+ const f=selectedPhoto;if(!f){alert("먼저 사진을 찍거나 고르세요.");return}
+ $("ocrResult").textContent="글자 읽기 엔진을 불러오는 중…";
+ try{
+  if(!window.Tesseract){await new Promise((ok,no)=>{const s=document.createElement("script");s.src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js";s.onload=ok;s.onerror=no;document.head.append(s)})}
+  const r=await Tesseract.recognize(f,"jpn",{logger:m=>{if(m.status==="recognizing text")$("ocrResult").textContent="글자 읽는 중… "+Math.round((m.progress||0)*100)+"%"}});
+  const jp=r.data.text.trim();
+  if(!jp){$("ocrResult").textContent="글자를 읽지 못했습니다. 글자가 크게 나오도록 가까이서 다시 찍어 주세요.";return}
+  $("source").value=jp;$("ocrResult").textContent="【일본어】\n"+jp+"\n\n【한국어】\n번역 중…";
+  try{const ko=await translate(jp);lastJp=ko;$("ocrResult").textContent="【일본어】\n"+jp+"\n\n【한국어】\n"+ko}
+  catch(e){$("ocrResult").textContent="【읽은 일본어】\n"+jp+"\n\n번역에 실패했습니다. 번역 탭에서 다시 시도해 주세요."}
+ }catch(e){$("ocrResult").textContent="사진 글자 읽기에 실패했습니다. 인터넷 연결을 확인하고 다시 시도하세요."}
+};
+renderList();
+
+let installPromptEvent=null;
+const installButton=$("installApp");
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();installPromptEvent=e;installButton.style.display="inline-block"});
+installButton.addEventListener("click",async()=>{
+ if(!installPromptEvent){alert("크롬 메뉴에서 '앱 설치' 또는 '홈 화면에 추가'를 선택하세요.");return}
+ installPromptEvent.prompt();await installPromptEvent.userChoice;installPromptEvent=null;installButton.style.display="none";
+});
+window.addEventListener("appinstalled",()=>{installButton.style.display="none"});
+if("serviceWorker" in navigator && (location.protocol==="https:" || location.hostname==="localhost")){
+ window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+}
+</script>
+</body>
+</html>
