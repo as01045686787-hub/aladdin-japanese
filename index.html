@@ -235,5 +235,59 @@ if("serviceWorker" in navigator && (location.protocol==="https:" || location.hos
  window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 }
 </script>
+
+<script>
+(function(){
+let kanjiData=null, wordData=null, loading=null;
+const res=document.getElementById("result");
+const box=document.createElement("div");
+box.id="check";
+box.style.cssText="padding:8px 0;font-size:14px;";
+res.insertAdjacentElement("afterend",box);
+function loadDicts(){
+  if(!loading){
+    loading=Promise.all([
+      fetch("kanji_readings.json").then(r=>r.json()),
+      fetch("word_readings.json").then(r=>r.json())
+    ]).then(v=>{kanjiData=v[0];wordData=v[1];});
+  }
+  return loading;
+}
+function esc(s){return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+function check(jp){
+  const out=[];
+  const runs=jp.match(/[一-鿿々]+[ぁ-ゖ]*/g)||[];
+  for(const r of runs){
+    const word=r.replace(/[ぁ-ゖ]+$/,"");
+    if(!word) continue;
+    const cands=wordData[word];
+    if(cands && cands.length){
+      out.push({t:word, reading:cands[0], note: cands.length>1 ? "읽기 여러 개, 확인 필요" : "단어 사전 일치"});
+      continue;
+    }
+    if(word.length===1 && kanjiData[word]){
+      const d=kanjiData[word];
+      const all=d.on.concat(d.kun);
+      out.push({t:word, reading:all.join(" / "), note: all.length>1 ? "한자 사전, 읽기 여러 개" : "한자 사전 일치"});
+      continue;
+    }
+    out.push({t:word, reading:null, note:"사전에 없음, 확인 필요"});
+  }
+  return out;
+}
+function render(items){
+  if(!items.length){box.innerHTML="";return;}
+  box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
+    items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v4 · 26-11-21 11시 10분</div>';
+}
+new MutationObserver(()=>{
+  const t=res.textContent.trim();
+  if(!t||t.startsWith("번역")){render([]);return;}
+  loadDicts().then(()=>render(check(t))).catch(()=>{box.textContent="사전 파일을 불러오지 못했습니다. kanji_readings.json, word_readings.json을 같은 폴더에 올렸는지 확인하세요.";});
+}).observe(res,{childList:true,characterData:true,subtree:true});
+})();
+</script>
+
 </body>
 </html>
