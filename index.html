@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v5 · 26-11-21 11시 17분</span></h1>
+  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v6 · 26-11-21 11시 25분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -125,10 +125,12 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
   <!-- 복습 -->
   <section id="study" class="panel">
     <h2>복습</h2>
-    <div id="flash" class="flash"></div>
-    <div class="actions">
-      <button id="revealBtn" class="btn" type="button">뜻 보기</button>
-      <button id="nextBtn" class="btn primary" style="margin-top:0" type="button">다음 표현</button>
+    <div id="flash" class="flash" style="font-size:44px;min-height:150px"></div>
+    <div id="meaning" class="card" style="margin-top:12px;font-size:20px;line-height:1.6;min-height:70px;white-space:pre-wrap"></div>
+    <div class="actions" style="grid-template-columns:1fr 1fr 1fr">
+      <button id="revealBtn" class="btn" type="button">뜻</button>
+      <button id="saveStudyBtn" class="btn" type="button">저장</button>
+      <button id="deleteBtn" class="btn" type="button">삭제</button>
     </div>
   </section>
 
@@ -165,7 +167,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <script>
 const $=id=>document.getElementById(id);
 let lastJp="",items=JSON.parse(localStorage.getItem("jphelper_items")||"[]"),current=-1,zoom=1;
-document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab,.panel").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(b.dataset.tab).classList.add("active");if(b.dataset.tab==="saved")renderList()});
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab,.panel").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(b.dataset.tab).classList.add("active");if(b.dataset.tab==="saved")renderList();if(b.dataset.tab==="study")studyOpen()});
 function detect(s){return /[ぁ-んァ-ン一-龯]/.test(s)?"ja":"ko"}
 async function translate(s){
  if(!s.trim()) throw Error("번역할 내용을 입력하세요.");
@@ -210,8 +212,22 @@ function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTM
 $("search").oninput=renderList;
 $("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="일본어_단어장.json";a.click();URL.revokeObjectURL(a.href)};
 $("importFile").onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(Array.isArray(data)){items=[...data,...items];persist();alert("가져왔습니다.")}}catch{alert("올바른 백업 파일이 아닙니다.")}};
-function next(){if(!items.length)return;current=Math.floor(Math.random()*items.length);$("flash").textContent=items[current].jp}
-$("nextBtn").onclick=next;$("revealBtn").onclick=()=>{if(current>=0)$("flash").textContent=items[current].jp+"\n"+items[current].ko};
+let deck=[],deckIdx=-1,removedIds=JSON.parse(localStorage.getItem("jphelper_removed")||"[]");
+function speakJa(t){const u=new SpeechSynthesisUtterance(t);u.lang="ja-JP";speechSynthesis.speak(u)}
+async function studyOpen(){
+ if(!deck.length){const all=await (await fetch("katakana_easy_1000.json")).json();deck=all.filter(x=>!removedIds.includes(x.id))}
+ if(deckIdx<0||!deck[deckIdx])showCard();
+}
+function showCard(){
+ $("meaning").textContent="";
+ if(!deck.length){$("flash").textContent="모든 카드를 끝냈습니다";deckIdx=-1;return}
+ deckIdx=Math.floor(Math.random()*deck.length);
+ $("flash").textContent=deck[deckIdx].katakana;
+}
+$("flash").onclick=()=>{if(deckIdx>=0)speakJa(deck[deckIdx].katakana)};
+$("revealBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];$("meaning").textContent=c.english+"\n"+c.korean};
+$("saveStudyBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];items.unshift({ko:c.korean+" ("+c.english+")",jp:c.katakana,created:Date.now()});persist();showCard();$("meaning").textContent="단어장에 저장했습니다."};
+$("deleteBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];removedIds.push(c.id);localStorage.setItem("jphelper_removed",JSON.stringify(removedIds));deck.splice(deckIdx,1);showCard()};
 let selectedPhoto=null;
 function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();}
 $("cameraFile").onchange=e=>usePhoto(e.target.files[0]);
@@ -291,12 +307,32 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v5 · 26-11-21 11시 17분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v6 · 26-11-21 11시 25분</div>';
 }
+function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
+function rubyCands(run,after){
+ if(wordData[run]&&wordData[run].length)return wordData[run];
+ if(run.length===1&&kanjiData[run]){const kun=kanjiData[run].kun||[];const st=stemsFor(kun,after);if(st.length)return st;if(kun.length&&!after)return kun.slice(0,1)}
+ return []
+}
+function showRuby(jp){
+ const parts=jp.split(/([一-鿿々]+)/);let h="";
+ for(let i=0;i<parts.length;i++){
+  const p=parts[i];if(!p)continue;
+  if(i%2===0){h+=esc(p);continue}
+  const nx=parts[i+1]||"";const m=nx.match(/^[ぁ-ゖ]*/);const after=m?m[0]:"";
+  const c=rubyCands(p,after);
+  if(!c.length){h+=esc(p);continue}
+  h+='<ruby class="jr" data-c="'+encodeURIComponent(JSON.stringify(c))+'">'+esc(p)+'<rt'+(c.length>1?' style="text-decoration:underline dotted"':'')+'>'+esc(c[0])+'</rt></ruby>';
+ }
+ $("ruby").innerHTML=h;
+}
+const rv=document.createElement("div");rv.id="ruby";rv.style.cssText="font-size:26px;font-weight:800;line-height:2.2;word-break:break-word;margin-top:8px";res.insertAdjacentElement("afterend",rv);
+rv.onclick=e=>{const r=e.target.closest&&e.target.closest("ruby.jr");if(!r)return;const c=JSON.parse(decodeURIComponent(r.dataset.c));if(c.length<2)return;const rt=r.querySelector("rt");const i=(c.indexOf(rt.textContent)+1)%c.length;rt.textContent=c[i]};
 new MutationObserver(()=>{
   const t=res.textContent.trim();
-  if(!t||t.startsWith("번역")){render([]);return;}
-  loadDicts().then(()=>render(check(t))).catch(()=>{box.textContent="사전 파일을 불러오지 못했습니다. kanji_readings.json, word_readings.json을 같은 폴더에 올렸는지 확인하세요.";});
+  if(!t||t.startsWith("번역")){render([]);rv.innerHTML="";return;}
+  loadDicts().then(()=>{render(check(t));showRuby(t)}).catch(()=>{box.textContent="사전 파일을 불러오지 못했습니다. kanji_readings.json, word_readings.json을 같은 폴더에 올렸는지 확인하세요.";});
 }).observe(res,{childList:true,characterData:true,subtree:true});
 })();
 </script>

@@ -1,0 +1,7002 @@
+[
+ {
+  "id": "ez-00001",
+  "katakana": "コーヒー",
+  "english": "coffee",
+  "korean": "커피",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00002",
+  "katakana": "ティー",
+  "english": "tea",
+  "korean": "차",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00003",
+  "katakana": "ミルク",
+  "english": "milk",
+  "korean": "우유",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00004",
+  "katakana": "ジュース",
+  "english": "juice",
+  "korean": "주스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00005",
+  "katakana": "ビール",
+  "english": "beer",
+  "korean": "맥주",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00006",
+  "katakana": "ワイン",
+  "english": "wine",
+  "korean": "와인",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00007",
+  "katakana": "ウイスキー",
+  "english": "whiskey",
+  "korean": "위스키",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00008",
+  "katakana": "ソーダ",
+  "english": "soda",
+  "korean": "탄산음료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00009",
+  "katakana": "コーラ",
+  "english": "cola",
+  "korean": "콜라",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00010",
+  "katakana": "サイダー",
+  "english": "cider",
+  "korean": "사이다",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00011",
+  "katakana": "レモネード",
+  "english": "lemonade",
+  "korean": "레모네이드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00012",
+  "katakana": "アイスコーヒー",
+  "english": "iced coffee",
+  "korean": "아이스커피",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00013",
+  "katakana": "アイスティー",
+  "english": "iced tea",
+  "korean": "아이스티",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00014",
+  "katakana": "ミルクティー",
+  "english": "milk tea",
+  "korean": "밀크티",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00015",
+  "katakana": "カフェラテ",
+  "english": "cafe latte",
+  "korean": "카페라테",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00016",
+  "katakana": "カプチーノ",
+  "english": "cappuccino",
+  "korean": "카푸치노",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00017",
+  "katakana": "エスプレッソ",
+  "english": "espresso",
+  "korean": "에스프레소",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00018",
+  "katakana": "アメリカーノ",
+  "english": "Americano",
+  "korean": "아메리카노",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00019",
+  "katakana": "ココア",
+  "english": "cocoa",
+  "korean": "코코아",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00020",
+  "katakana": "スムージー",
+  "english": "smoothie",
+  "korean": "스무디",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00021",
+  "katakana": "シェイク",
+  "english": "shake",
+  "korean": "셰이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00022",
+  "katakana": "ジュースバー",
+  "english": "juice bar",
+  "korean": "주스바",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00023",
+  "katakana": "ミネラルウォーター",
+  "english": "mineral water",
+  "korean": "생수",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00024",
+  "katakana": "ホットコーヒー",
+  "english": "hot coffee",
+  "korean": "따뜻한 커피",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00025",
+  "katakana": "ホット",
+  "english": "hot",
+  "korean": "따뜻한",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00026",
+  "katakana": "アイス",
+  "english": "iced",
+  "korean": "차가운",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00027",
+  "katakana": "ラージ",
+  "english": "large",
+  "korean": "큰 사이즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00028",
+  "katakana": "レギュラー",
+  "english": "regular",
+  "korean": "보통 사이즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00029",
+  "katakana": "スモール",
+  "english": "small",
+  "korean": "작은 사이즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00030",
+  "katakana": "ミディアム",
+  "english": "medium",
+  "korean": "중간 사이즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00031",
+  "katakana": "シングル",
+  "english": "single",
+  "korean": "한 개",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00032",
+  "katakana": "ダブル",
+  "english": "double",
+  "korean": "두 개",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00033",
+  "katakana": "セット",
+  "english": "set",
+  "korean": "세트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00034",
+  "katakana": "ランチ",
+  "english": "lunch",
+  "korean": "점심",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00035",
+  "katakana": "ディナー",
+  "english": "dinner",
+  "korean": "저녁",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00036",
+  "katakana": "モーニング",
+  "english": "morning",
+  "korean": "아침",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00037",
+  "katakana": "デザート",
+  "english": "dessert",
+  "korean": "디저트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00038",
+  "katakana": "パン",
+  "english": "bread",
+  "korean": "빵",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00039",
+  "katakana": "バゲット",
+  "english": "baguette",
+  "korean": "바게트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00040",
+  "katakana": "クロワッサン",
+  "english": "croissant",
+  "korean": "크루아상",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00041",
+  "katakana": "ドーナツ",
+  "english": "doughnut",
+  "korean": "도넛",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00042",
+  "katakana": "マフィン",
+  "english": "muffin",
+  "korean": "머핀",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00043",
+  "katakana": "パンケーキ",
+  "english": "pancake",
+  "korean": "팬케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00044",
+  "katakana": "ワッフル",
+  "english": "waffle",
+  "korean": "와플",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00045",
+  "katakana": "ホットケーキ",
+  "english": "hot cake",
+  "korean": "핫케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00046",
+  "katakana": "トースト",
+  "english": "toast",
+  "korean": "토스트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00047",
+  "katakana": "フレンチトースト",
+  "english": "french toast",
+  "korean": "프렌치토스트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00048",
+  "katakana": "サンドイッチ",
+  "english": "sandwich",
+  "korean": "샌드위치",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00049",
+  "katakana": "ハンバーガー",
+  "english": "hamburger",
+  "korean": "햄버거",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00050",
+  "katakana": "チーズバーガー",
+  "english": "cheeseburger",
+  "korean": "치즈버거",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00051",
+  "katakana": "チキンバーガー",
+  "english": "chicken burger",
+  "korean": "치킨버거",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00052",
+  "katakana": "ホットドッグ",
+  "english": "hot dog",
+  "korean": "핫도그",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00053",
+  "katakana": "ピザ",
+  "english": "pizza",
+  "korean": "피자",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00054",
+  "katakana": "パスタ",
+  "english": "pasta",
+  "korean": "파스타",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00055",
+  "katakana": "スパゲッティ",
+  "english": "spaghetti",
+  "korean": "스파게티",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00056",
+  "katakana": "カルボナーラ",
+  "english": "carbonara",
+  "korean": "카르보나라",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00057",
+  "katakana": "ナポリタン",
+  "english": "napolitan",
+  "korean": "나폴리탄",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00058",
+  "katakana": "ミートソース",
+  "english": "meat sauce",
+  "korean": "미트소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00059",
+  "katakana": "ラザニア",
+  "english": "lasagna",
+  "korean": "라자냐",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00060",
+  "katakana": "ドリア",
+  "english": "doria",
+  "korean": "도리아",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00061",
+  "katakana": "グラタン",
+  "english": "gratin",
+  "korean": "그라탱",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00062",
+  "katakana": "リゾット",
+  "english": "risotto",
+  "korean": "리소토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00063",
+  "katakana": "オムライス",
+  "english": "omelet rice",
+  "korean": "오므라이스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00064",
+  "katakana": "オムレツ",
+  "english": "omelet",
+  "korean": "오믈렛",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00065",
+  "katakana": "ピラフ",
+  "english": "pilaf",
+  "korean": "필라프",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00066",
+  "katakana": "カレー",
+  "english": "curry",
+  "korean": "카레",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00067",
+  "katakana": "カツカレー",
+  "english": "cutlet curry",
+  "korean": "돈가스 카레",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00068",
+  "katakana": "ハヤシ",
+  "english": "hayashi rice",
+  "korean": "하야시 라이스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00069",
+  "katakana": "ハンバーグ",
+  "english": "hamburg steak",
+  "korean": "함박스테이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00070",
+  "katakana": "ステーキ",
+  "english": "steak",
+  "korean": "스테이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00071",
+  "katakana": "ビーフステーキ",
+  "english": "beef steak",
+  "korean": "소고기 스테이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00072",
+  "katakana": "ポークステーキ",
+  "english": "pork steak",
+  "korean": "돼지고기 스테이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00073",
+  "katakana": "チキンステーキ",
+  "english": "chicken steak",
+  "korean": "닭고기 스테이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00074",
+  "katakana": "チキン",
+  "english": "chicken",
+  "korean": "닭고기",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00075",
+  "katakana": "ポーク",
+  "english": "pork",
+  "korean": "돼지고기",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00076",
+  "katakana": "ビーフ",
+  "english": "beef",
+  "korean": "소고기",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00077",
+  "katakana": "ラム",
+  "english": "lamb",
+  "korean": "양고기",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00078",
+  "katakana": "ハム",
+  "english": "ham",
+  "korean": "햄",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00079",
+  "katakana": "ベーコン",
+  "english": "bacon",
+  "korean": "베이컨",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00080",
+  "katakana": "ソーセージ",
+  "english": "sausage",
+  "korean": "소시지",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00081",
+  "katakana": "ツナ",
+  "english": "tuna",
+  "korean": "참치",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00082",
+  "katakana": "サーモン",
+  "english": "salmon",
+  "korean": "연어",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00083",
+  "katakana": "エビ",
+  "english": "shrimp",
+  "korean": "새우",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00084",
+  "katakana": "カニ",
+  "english": "crab",
+  "korean": "게",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00085",
+  "katakana": "イカ",
+  "english": "squid",
+  "korean": "오징어",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00086",
+  "katakana": "タコ",
+  "english": "octopus",
+  "korean": "문어",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00087",
+  "katakana": "ホタテ",
+  "english": "scallop",
+  "korean": "가리비",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00088",
+  "katakana": "フライ",
+  "english": "fry",
+  "korean": "튀김",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00089",
+  "katakana": "フライドポテト",
+  "english": "french fries",
+  "korean": "감자튀김",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00090",
+  "katakana": "ポテト",
+  "english": "potato",
+  "korean": "감자",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00091",
+  "katakana": "ポテトサラダ",
+  "english": "potato salad",
+  "korean": "감자샐러드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00092",
+  "katakana": "ナゲット",
+  "english": "nugget",
+  "korean": "너겟",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00093",
+  "katakana": "コロッケ",
+  "english": "croquette",
+  "korean": "크로켓",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00094",
+  "katakana": "カツ",
+  "english": "cutlet",
+  "korean": "커틀릿",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00095",
+  "katakana": "トンカツ",
+  "english": "pork cutlet",
+  "korean": "돈가스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00096",
+  "katakana": "チキンカツ",
+  "english": "chicken cutlet",
+  "korean": "치킨가스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00097",
+  "katakana": "ギョーザ",
+  "english": "gyoza",
+  "korean": "교자",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00098",
+  "katakana": "シュウマイ",
+  "english": "shumai",
+  "korean": "샤오마이",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00099",
+  "katakana": "ワンタン",
+  "english": "wonton",
+  "korean": "완탕",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00100",
+  "katakana": "ラーメン",
+  "english": "ramen",
+  "korean": "라멘",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00101",
+  "katakana": "ヌードル",
+  "english": "noodle",
+  "korean": "면",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00102",
+  "katakana": "ヌードルスープ",
+  "english": "noodle soup",
+  "korean": "국수 국물",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00103",
+  "katakana": "マイルド",
+  "english": "mild",
+  "korean": "순한",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00104",
+  "katakana": "ホットソース",
+  "english": "hot sauce",
+  "korean": "핫소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00105",
+  "katakana": "タコス",
+  "english": "taco",
+  "korean": "타코",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00106",
+  "katakana": "ブリトー",
+  "english": "burrito",
+  "korean": "부리토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00107",
+  "katakana": "ナチョス",
+  "english": "nachos",
+  "korean": "나초",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00108",
+  "katakana": "サルサ",
+  "english": "salsa",
+  "korean": "살사",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00109",
+  "katakana": "ケチャップ",
+  "english": "ketchup",
+  "korean": "케첩",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00110",
+  "katakana": "マヨネーズ",
+  "english": "mayonnaise",
+  "korean": "마요네즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00111",
+  "katakana": "マスタード",
+  "english": "mustard",
+  "korean": "머스터드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00112",
+  "katakana": "ソース",
+  "english": "sauce",
+  "korean": "소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00113",
+  "katakana": "ドレッシング",
+  "english": "dressing",
+  "korean": "드레싱",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00114",
+  "katakana": "マーガリン",
+  "english": "margarine",
+  "korean": "마가린",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00115",
+  "katakana": "バター",
+  "english": "butter",
+  "korean": "버터",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00116",
+  "katakana": "チーズ",
+  "english": "cheese",
+  "korean": "치즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00117",
+  "katakana": "ヨーグルト",
+  "english": "yogurt",
+  "korean": "요구르트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00118",
+  "katakana": "ジャム",
+  "english": "jam",
+  "korean": "잼",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00119",
+  "katakana": "ハチミツ",
+  "english": "honey",
+  "korean": "꿀",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00120",
+  "katakana": "ハニー",
+  "english": "honey",
+  "korean": "꿀",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00121",
+  "katakana": "シロップ",
+  "english": "syrup",
+  "korean": "시럽",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00122",
+  "katakana": "シュガー",
+  "english": "sugar",
+  "korean": "설탕",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00123",
+  "katakana": "ミルクシェイク",
+  "english": "milkshake",
+  "korean": "밀크셰이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00124",
+  "katakana": "アイスクリーム",
+  "english": "ice cream",
+  "korean": "아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00125",
+  "katakana": "ジェラート",
+  "english": "gelato",
+  "korean": "젤라토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00126",
+  "katakana": "ソフトクリーム",
+  "english": "soft serve",
+  "korean": "소프트아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00127",
+  "katakana": "シャーベット",
+  "english": "sherbet",
+  "korean": "샤베트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00128",
+  "katakana": "プリン",
+  "english": "pudding",
+  "korean": "푸딩",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00129",
+  "katakana": "ゼリー",
+  "english": "jelly",
+  "korean": "젤리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00130",
+  "katakana": "ケーキ",
+  "english": "cake",
+  "korean": "케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00131",
+  "katakana": "チーズケーキ",
+  "english": "cheesecake",
+  "korean": "치즈케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00132",
+  "katakana": "ショートケーキ",
+  "english": "shortcake",
+  "korean": "쇼트케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00133",
+  "katakana": "ロールケーキ",
+  "english": "roll cake",
+  "korean": "롤케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00134",
+  "katakana": "チョコケーキ",
+  "english": "chocolate cake",
+  "korean": "초콜릿 케이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00135",
+  "katakana": "クッキー",
+  "english": "cookie",
+  "korean": "쿠키",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00136",
+  "katakana": "チョコレート",
+  "english": "chocolate",
+  "korean": "초콜릿",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00137",
+  "katakana": "チョコ",
+  "english": "chocolate",
+  "korean": "초콜릿",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00138",
+  "katakana": "キャラメル",
+  "english": "caramel",
+  "korean": "캐러멜",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00139",
+  "katakana": "クリーム",
+  "english": "cream",
+  "korean": "크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00140",
+  "katakana": "ホイップクリーム",
+  "english": "whipped cream",
+  "korean": "휘핑크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00141",
+  "katakana": "バニラ",
+  "english": "vanilla",
+  "korean": "바닐라",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00142",
+  "katakana": "ストロベリー",
+  "english": "strawberry",
+  "korean": "딸기",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00143",
+  "katakana": "チョコミント",
+  "english": "chocolate mint",
+  "korean": "초코민트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00144",
+  "katakana": "ブルーベリー",
+  "english": "blueberry",
+  "korean": "블루베리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00145",
+  "katakana": "マンゴー",
+  "english": "mango",
+  "korean": "망고",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00146",
+  "katakana": "ピーチ",
+  "english": "peach",
+  "korean": "복숭아",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00147",
+  "katakana": "レモン",
+  "english": "lemon",
+  "korean": "레몬",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00148",
+  "katakana": "オレンジ",
+  "english": "orange",
+  "korean": "오렌지",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00149",
+  "katakana": "グレープ",
+  "english": "grape",
+  "korean": "포도",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00150",
+  "katakana": "アップル",
+  "english": "apple",
+  "korean": "사과",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00151",
+  "katakana": "バナナ",
+  "english": "banana",
+  "korean": "바나나",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00152",
+  "katakana": "ココナッツ",
+  "english": "coconut",
+  "korean": "코코넛",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00153",
+  "katakana": "パイナップル",
+  "english": "pineapple",
+  "korean": "파인애플",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00154",
+  "katakana": "キウイ",
+  "english": "kiwi",
+  "korean": "키위",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00155",
+  "katakana": "メロン",
+  "english": "melon",
+  "korean": "멜론",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00156",
+  "katakana": "スイカ",
+  "english": "watermelon",
+  "korean": "수박",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00157",
+  "katakana": "チェリー",
+  "english": "cherry",
+  "korean": "체리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00158",
+  "katakana": "フルーツ",
+  "english": "fruit",
+  "korean": "과일",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00159",
+  "katakana": "サラダ",
+  "english": "salad",
+  "korean": "샐러드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00160",
+  "katakana": "シーザーサラダ",
+  "english": "caesar salad",
+  "korean": "시저 샐러드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00161",
+  "katakana": "コーンスープ",
+  "english": "corn soup",
+  "korean": "옥수수 수프",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00162",
+  "katakana": "スープ",
+  "english": "soup",
+  "korean": "수프",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00163",
+  "katakana": "オニオンスープ",
+  "english": "onion soup",
+  "korean": "어니언 수프",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00164",
+  "katakana": "トマトスープ",
+  "english": "tomato soup",
+  "korean": "토마토 수프",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00165",
+  "katakana": "クラムチャウダー",
+  "english": "clam chowder",
+  "korean": "클램 차우더",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00166",
+  "katakana": "ミネストローネ",
+  "english": "minestrone",
+  "korean": "미네스트로네",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00167",
+  "katakana": "ポタージュ",
+  "english": "potage",
+  "korean": "포타주",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00168",
+  "katakana": "トマト",
+  "english": "tomato",
+  "korean": "토마토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00169",
+  "katakana": "キャベツ",
+  "english": "cabbage",
+  "korean": "양배추",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00170",
+  "katakana": "レタス",
+  "english": "lettuce",
+  "korean": "상추",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00171",
+  "katakana": "オニオン",
+  "english": "onion",
+  "korean": "양파",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00172",
+  "katakana": "ガーリック",
+  "english": "garlic",
+  "korean": "마늘",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00173",
+  "katakana": "ブロッコリー",
+  "english": "broccoli",
+  "korean": "브로콜리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00174",
+  "katakana": "コーン",
+  "english": "corn",
+  "korean": "옥수수",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00175",
+  "katakana": "アボカド",
+  "english": "avocado",
+  "korean": "아보카도",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00176",
+  "katakana": "ナッツ",
+  "english": "nuts",
+  "korean": "견과류",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00177",
+  "katakana": "アーモンド",
+  "english": "almond",
+  "korean": "아몬드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00178",
+  "katakana": "ピーナッツ",
+  "english": "peanut",
+  "korean": "땅콩",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00179",
+  "katakana": "ゴマ",
+  "english": "sesame",
+  "korean": "참깨",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00180",
+  "katakana": "ハーブ",
+  "english": "herb",
+  "korean": "허브",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00181",
+  "katakana": "スパイス",
+  "english": "spice",
+  "korean": "향신료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00182",
+  "katakana": "ペッパー",
+  "english": "pepper",
+  "korean": "후추",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00183",
+  "katakana": "ソルト",
+  "english": "salt",
+  "korean": "소금",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00184",
+  "katakana": "ベジタリアン",
+  "english": "vegetarian",
+  "korean": "채식",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00185",
+  "katakana": "ヴィーガン",
+  "english": "vegan",
+  "korean": "비건",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00186",
+  "katakana": "ハラール",
+  "english": "halal",
+  "korean": "할랄",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00187",
+  "katakana": "グルテンフリー",
+  "english": "gluten free",
+  "korean": "글루텐 프리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00188",
+  "katakana": "ノンアルコール",
+  "english": "non-alcoholic",
+  "korean": "무알콜",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00189",
+  "katakana": "アルコール",
+  "english": "alcohol",
+  "korean": "술",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00190",
+  "katakana": "カクテル",
+  "english": "cocktail",
+  "korean": "칵테일",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00191",
+  "katakana": "ワイングラス",
+  "english": "wine glass",
+  "korean": "와인잔",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00192",
+  "katakana": "シャンパン",
+  "english": "champagne",
+  "korean": "샴페인",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00193",
+  "katakana": "ビアガーデン",
+  "english": "beer garden",
+  "korean": "비어가든",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00194",
+  "katakana": "ハイボール",
+  "english": "highball",
+  "korean": "하이볼",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00195",
+  "katakana": "ウォッカ",
+  "english": "vodka",
+  "korean": "보드카",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00196",
+  "katakana": "ジン",
+  "english": "gin",
+  "korean": "진",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00197",
+  "katakana": "テキーラ",
+  "english": "tequila",
+  "korean": "데킬라",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00198",
+  "katakana": "ブランデー",
+  "english": "brandy",
+  "korean": "브랜디",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00199",
+  "katakana": "ロゼ",
+  "english": "rosé",
+  "korean": "로제",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00200",
+  "katakana": "ソムリエ",
+  "english": "sommelier",
+  "korean": "소믈리에",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00201",
+  "katakana": "エアポート",
+  "english": "airport",
+  "korean": "공항",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00202",
+  "katakana": "ターミナル",
+  "english": "terminal",
+  "korean": "터미널",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00203",
+  "katakana": "チケット",
+  "english": "ticket",
+  "korean": "표",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00204",
+  "katakana": "パスポート",
+  "english": "passport",
+  "korean": "여권",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00205",
+  "katakana": "チェックイン",
+  "english": "check-in",
+  "korean": "체크인",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00206",
+  "katakana": "チェックアウト",
+  "english": "check-out",
+  "korean": "체크아웃",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00207",
+  "katakana": "カウンター",
+  "english": "counter",
+  "korean": "카운터",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00208",
+  "katakana": "ゲート",
+  "english": "gate",
+  "korean": "게이트",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00209",
+  "katakana": "ロビー",
+  "english": "lobby",
+  "korean": "로비",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00210",
+  "katakana": "ラウンジ",
+  "english": "lounge",
+  "korean": "라운지",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00211",
+  "katakana": "フライト",
+  "english": "flight",
+  "korean": "비행편",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00212",
+  "katakana": "ボーディング",
+  "english": "boarding",
+  "korean": "탑승",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00213",
+  "katakana": "ボーディングパス",
+  "english": "boarding pass",
+  "korean": "탑승권",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00214",
+  "katakana": "セキュリティ",
+  "english": "security",
+  "korean": "보안검색",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00215",
+  "katakana": "チェック",
+  "english": "check",
+  "korean": "검사",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00216",
+  "katakana": "ベルト",
+  "english": "belt",
+  "korean": "벨트",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00217",
+  "katakana": "カート",
+  "english": "cart",
+  "korean": "카트",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00218",
+  "katakana": "キャリーケース",
+  "english": "carry case",
+  "korean": "캐리어",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00219",
+  "katakana": "スーツケース",
+  "english": "suitcase",
+  "korean": "여행가방",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00220",
+  "katakana": "バッグ",
+  "english": "bag",
+  "korean": "가방",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00221",
+  "katakana": "リュック",
+  "english": "backpack",
+  "korean": "배낭",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00222",
+  "katakana": "ポーチ",
+  "english": "pouch",
+  "korean": "파우치",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00223",
+  "katakana": "ロッカー",
+  "english": "locker",
+  "korean": "보관함",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00224",
+  "katakana": "インフォメーション",
+  "english": "information",
+  "korean": "안내소",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00225",
+  "katakana": "ツーリスト",
+  "english": "tourist",
+  "korean": "관광객",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00226",
+  "katakana": "トランジット",
+  "english": "transit",
+  "korean": "환승",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00227",
+  "katakana": "ディレイ",
+  "english": "delay",
+  "korean": "지연",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00228",
+  "katakana": "キャンセル",
+  "english": "cancel",
+  "korean": "취소",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00229",
+  "katakana": "ステーション",
+  "english": "station",
+  "korean": "역",
+  "place": "역"
+ },
+ {
+  "id": "ez-00230",
+  "katakana": "ホーム",
+  "english": "platform",
+  "korean": "승강장",
+  "place": "역"
+ },
+ {
+  "id": "ez-00231",
+  "katakana": "エスカレーター",
+  "english": "escalator",
+  "korean": "에스컬레이터",
+  "place": "역"
+ },
+ {
+  "id": "ez-00232",
+  "katakana": "エレベーター",
+  "english": "elevator",
+  "korean": "엘리베이터",
+  "place": "역"
+ },
+ {
+  "id": "ez-00233",
+  "katakana": "エントランス",
+  "english": "entrance",
+  "korean": "입구",
+  "place": "역"
+ },
+ {
+  "id": "ez-00234",
+  "katakana": "エグジット",
+  "english": "exit",
+  "korean": "출구",
+  "place": "역"
+ },
+ {
+  "id": "ez-00235",
+  "katakana": "ターミナルビル",
+  "english": "terminal building",
+  "korean": "터미널 건물",
+  "place": "역"
+ },
+ {
+  "id": "ez-00236",
+  "katakana": "タイムテーブル",
+  "english": "timetable",
+  "korean": "시간표",
+  "place": "역"
+ },
+ {
+  "id": "ez-00237",
+  "katakana": "ルート",
+  "english": "route",
+  "korean": "길",
+  "place": "역"
+ },
+ {
+  "id": "ez-00238",
+  "katakana": "ロータリー",
+  "english": "rotary",
+  "korean": "회전교차로",
+  "place": "역"
+ },
+ {
+  "id": "ez-00239",
+  "katakana": "ナビ",
+  "english": "navigation",
+  "korean": "내비",
+  "place": "역"
+ },
+ {
+  "id": "ez-00240",
+  "katakana": "マップ",
+  "english": "map",
+  "korean": "지도",
+  "place": "역"
+ },
+ {
+  "id": "ez-00241",
+  "katakana": "タクシー",
+  "english": "taxi",
+  "korean": "택시",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00242",
+  "katakana": "バス",
+  "english": "bus",
+  "korean": "버스",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00243",
+  "katakana": "バスストップ",
+  "english": "bus stop",
+  "korean": "버스정류장",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00244",
+  "katakana": "トラック",
+  "english": "truck",
+  "korean": "트럭",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00245",
+  "katakana": "バイク",
+  "english": "motorcycle",
+  "korean": "오토바이",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00246",
+  "katakana": "バイシクル",
+  "english": "bicycle",
+  "korean": "자전거",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00247",
+  "katakana": "レンタカー",
+  "english": "rental car",
+  "korean": "렌터카",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00248",
+  "katakana": "ガソリン",
+  "english": "gasoline",
+  "korean": "휘발유",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00249",
+  "katakana": "ガソリンスタンド",
+  "english": "gas station",
+  "korean": "주유소",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00250",
+  "katakana": "パーキング",
+  "english": "parking",
+  "korean": "주차장",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00251",
+  "katakana": "ドライブ",
+  "english": "drive",
+  "korean": "드라이브",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00252",
+  "katakana": "ハンドル",
+  "english": "steering wheel",
+  "korean": "핸들",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00253",
+  "katakana": "シート",
+  "english": "seat",
+  "korean": "자리",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00254",
+  "katakana": "シートベルト",
+  "english": "seat belt",
+  "korean": "안전벨트",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00255",
+  "katakana": "ドア",
+  "english": "door",
+  "korean": "문",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00256",
+  "katakana": "ウインドウ",
+  "english": "window",
+  "korean": "창문",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00257",
+  "katakana": "ミラー",
+  "english": "mirror",
+  "korean": "거울",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00258",
+  "katakana": "タイヤ",
+  "english": "tire",
+  "korean": "타이어",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00259",
+  "katakana": "ブレーキ",
+  "english": "brake",
+  "korean": "브레이크",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00260",
+  "katakana": "エンジン",
+  "english": "engine",
+  "korean": "엔진",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00261",
+  "katakana": "ライト",
+  "english": "light",
+  "korean": "등",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00262",
+  "katakana": "ストップ",
+  "english": "stop",
+  "korean": "정지",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00263",
+  "katakana": "スタート",
+  "english": "start",
+  "korean": "시작",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00264",
+  "katakana": "ノーパーキング",
+  "english": "no parking",
+  "korean": "주차 금지",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00265",
+  "katakana": "ワンウェイ",
+  "english": "one way",
+  "korean": "일방통행",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00266",
+  "katakana": "スピード",
+  "english": "speed",
+  "korean": "속도",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00267",
+  "katakana": "ロード",
+  "english": "road",
+  "korean": "도로",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00268",
+  "katakana": "ハイウェイ",
+  "english": "highway",
+  "korean": "고속도로",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00269",
+  "katakana": "ブリッジ",
+  "english": "bridge",
+  "korean": "다리",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00270",
+  "katakana": "トンネル",
+  "english": "tunnel",
+  "korean": "터널",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00271",
+  "katakana": "ストリート",
+  "english": "street",
+  "korean": "거리",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00272",
+  "katakana": "クロッシング",
+  "english": "crossing",
+  "korean": "횡단보도",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00273",
+  "katakana": "フェリー",
+  "english": "ferry",
+  "korean": "페리",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00274",
+  "katakana": "ボート",
+  "english": "boat",
+  "korean": "보트",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00275",
+  "katakana": "ヨット",
+  "english": "yacht",
+  "korean": "요트",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00276",
+  "katakana": "ヘリコプター",
+  "english": "helicopter",
+  "korean": "헬리콥터",
+  "place": "교통"
+ },
+ {
+  "id": "ez-00277",
+  "katakana": "ホテル",
+  "english": "hotel",
+  "korean": "호텔",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00278",
+  "katakana": "ゲストハウス",
+  "english": "guesthouse",
+  "korean": "게스트하우스",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00279",
+  "katakana": "ホステル",
+  "english": "hostel",
+  "korean": "호스텔",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00280",
+  "katakana": "モーテル",
+  "english": "motel",
+  "korean": "모텔",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00281",
+  "katakana": "ペンション",
+  "english": "pension",
+  "korean": "펜션",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00282",
+  "katakana": "ルームキー",
+  "english": "room key",
+  "korean": "객실 열쇠",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00283",
+  "katakana": "ルーム",
+  "english": "room",
+  "korean": "방",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00284",
+  "katakana": "シングルルーム",
+  "english": "single room",
+  "korean": "1인실",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00285",
+  "katakana": "ダブルルーム",
+  "english": "double room",
+  "korean": "2인실",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00286",
+  "katakana": "ツインルーム",
+  "english": "twin room",
+  "korean": "트윈룸",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00287",
+  "katakana": "スイート",
+  "english": "suite",
+  "korean": "스위트룸",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00288",
+  "katakana": "フロント",
+  "english": "front desk",
+  "korean": "프런트",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00289",
+  "katakana": "ルームサービス",
+  "english": "room service",
+  "korean": "룸서비스",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00290",
+  "katakana": "ベッド",
+  "english": "bed",
+  "korean": "침대",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00291",
+  "katakana": "マットレス",
+  "english": "mattress",
+  "korean": "매트리스",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00292",
+  "katakana": "シーツ",
+  "english": "sheets",
+  "korean": "시트",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00293",
+  "katakana": "ブランケット",
+  "english": "blanket",
+  "korean": "담요",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00294",
+  "katakana": "タオル",
+  "english": "towel",
+  "korean": "수건",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00295",
+  "katakana": "バスタオル",
+  "english": "bath towel",
+  "korean": "목욕 수건",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00296",
+  "katakana": "バスローブ",
+  "english": "bathrobe",
+  "korean": "목욕 가운",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00297",
+  "katakana": "スリッパ",
+  "english": "slippers",
+  "korean": "슬리퍼",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00298",
+  "katakana": "シャワー",
+  "english": "shower",
+  "korean": "샤워",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00299",
+  "katakana": "バスルーム",
+  "english": "bathroom",
+  "korean": "욕실",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00300",
+  "katakana": "トイレ",
+  "english": "toilet",
+  "korean": "화장실",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00301",
+  "katakana": "トイレットペーパー",
+  "english": "toilet paper",
+  "korean": "휴지",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00302",
+  "katakana": "ペーパー",
+  "english": "paper",
+  "korean": "종이",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00303",
+  "katakana": "ペーパータオル",
+  "english": "paper towel",
+  "korean": "종이 타월",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00304",
+  "katakana": "ティッシュ",
+  "english": "tissue",
+  "korean": "티슈",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00305",
+  "katakana": "ハンドソープ",
+  "english": "hand soap",
+  "korean": "손 비누",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00306",
+  "katakana": "ソープ",
+  "english": "soap",
+  "korean": "비누",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00307",
+  "katakana": "シャンプー",
+  "english": "shampoo",
+  "korean": "샴푸",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00308",
+  "katakana": "リンス",
+  "english": "rinse",
+  "korean": "린스",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00309",
+  "katakana": "ドライヤー",
+  "english": "hair dryer",
+  "korean": "헤어드라이어",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00310",
+  "katakana": "ハンドドライヤー",
+  "english": "hand dryer",
+  "korean": "핸드드라이어",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00311",
+  "katakana": "ウォーターサーバー",
+  "english": "water dispenser",
+  "korean": "정수기",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00312",
+  "katakana": "ペットボトル",
+  "english": "plastic bottle",
+  "korean": "페트병",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00313",
+  "katakana": "ボトル",
+  "english": "bottle",
+  "korean": "병",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00314",
+  "katakana": "マナー",
+  "english": "manners",
+  "korean": "예절",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00315",
+  "katakana": "ルール",
+  "english": "rule",
+  "korean": "규칙",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00316",
+  "katakana": "ウェルカム",
+  "english": "welcome",
+  "korean": "환영",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00317",
+  "katakana": "クローズ",
+  "english": "closed",
+  "korean": "닫힘",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00318",
+  "katakana": "ユーズ",
+  "english": "use",
+  "korean": "사용",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00319",
+  "katakana": "ノー",
+  "english": "no",
+  "korean": "아니요",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00320",
+  "katakana": "イエス",
+  "english": "yes",
+  "korean": "예",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00321",
+  "katakana": "ワーニング",
+  "english": "warning",
+  "korean": "경고",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00322",
+  "katakana": "デンジャー",
+  "english": "danger",
+  "korean": "위험",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00323",
+  "katakana": "インフォメーションセンター",
+  "english": "information center",
+  "korean": "안내센터",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00324",
+  "katakana": "ナンバー",
+  "english": "number",
+  "korean": "번호",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00325",
+  "katakana": "ネーム",
+  "english": "name",
+  "korean": "이름",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00326",
+  "katakana": "エイジ",
+  "english": "age",
+  "korean": "나이",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00327",
+  "katakana": "アドレス",
+  "english": "address",
+  "korean": "주소",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00328",
+  "katakana": "ゼロ",
+  "english": "zero",
+  "korean": "0",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00329",
+  "katakana": "ワン",
+  "english": "one",
+  "korean": "1",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00330",
+  "katakana": "ツー",
+  "english": "two",
+  "korean": "2",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00331",
+  "katakana": "スリー",
+  "english": "three",
+  "korean": "3",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00332",
+  "katakana": "フォー",
+  "english": "four",
+  "korean": "4",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00333",
+  "katakana": "ファイブ",
+  "english": "five",
+  "korean": "5",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00334",
+  "katakana": "シックス",
+  "english": "six",
+  "korean": "6",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00335",
+  "katakana": "セブン",
+  "english": "seven",
+  "korean": "7",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00336",
+  "katakana": "エイト",
+  "english": "eight",
+  "korean": "8",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00337",
+  "katakana": "ナイン",
+  "english": "nine",
+  "korean": "9",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00338",
+  "katakana": "テン",
+  "english": "ten",
+  "korean": "10",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00339",
+  "katakana": "ノート",
+  "english": "notebook",
+  "korean": "노트",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00340",
+  "katakana": "ペン",
+  "english": "pen",
+  "korean": "펜",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00341",
+  "katakana": "カード",
+  "english": "card",
+  "korean": "카드",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00342",
+  "katakana": "クレジットカード",
+  "english": "credit card",
+  "korean": "신용카드",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00343",
+  "katakana": "キャッシュ",
+  "english": "cash",
+  "korean": "현금",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00344",
+  "katakana": "ポケット",
+  "english": "pocket",
+  "korean": "주머니",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00345",
+  "katakana": "ロック",
+  "english": "lock",
+  "korean": "잠금",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00346",
+  "katakana": "キー",
+  "english": "key",
+  "korean": "열쇠",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00347",
+  "katakana": "ドアキー",
+  "english": "door key",
+  "korean": "문 열쇠",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00348",
+  "katakana": "ベル",
+  "english": "bell",
+  "korean": "벨",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00349",
+  "katakana": "ボタン",
+  "english": "button",
+  "korean": "버튼",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00350",
+  "katakana": "スイッチ",
+  "english": "switch",
+  "korean": "스위치",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00351",
+  "katakana": "プッシュ",
+  "english": "push",
+  "korean": "밀기",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00352",
+  "katakana": "プル",
+  "english": "pull",
+  "korean": "당기기",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00353",
+  "katakana": "タッチ",
+  "english": "touch",
+  "korean": "만지기",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00354",
+  "katakana": "ヘルプ",
+  "english": "help",
+  "korean": "도움",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00355",
+  "katakana": "サポート",
+  "english": "support",
+  "korean": "지원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00356",
+  "katakana": "スマイル",
+  "english": "smile",
+  "korean": "미소",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00357",
+  "katakana": "ハッピー",
+  "english": "happy",
+  "korean": "행복",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00358",
+  "katakana": "グッド",
+  "english": "good",
+  "korean": "좋음",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00359",
+  "katakana": "バッド",
+  "english": "bad",
+  "korean": "나쁨",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00360",
+  "katakana": "ベスト",
+  "english": "best",
+  "korean": "최고",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00361",
+  "katakana": "ニュー",
+  "english": "new",
+  "korean": "새로운",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00362",
+  "katakana": "オールド",
+  "english": "old",
+  "korean": "오래된",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00363",
+  "katakana": "フリー",
+  "english": "free",
+  "korean": "무료",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00364",
+  "katakana": "コールド",
+  "english": "cold",
+  "korean": "차가움",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00365",
+  "katakana": "ファースト",
+  "english": "first",
+  "korean": "첫째",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00366",
+  "katakana": "ラスト",
+  "english": "last",
+  "korean": "마지막",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00367",
+  "katakana": "ナンバーワン",
+  "english": "number one",
+  "korean": "1위",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00368",
+  "katakana": "ショッピングセンター",
+  "english": "shopping center",
+  "korean": "쇼핑센터",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00369",
+  "katakana": "ショッピング",
+  "english": "shopping",
+  "korean": "쇼핑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00370",
+  "katakana": "ショップ",
+  "english": "shop",
+  "korean": "가게",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00371",
+  "katakana": "ストア",
+  "english": "store",
+  "korean": "상점",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00372",
+  "katakana": "デパート",
+  "english": "department store",
+  "korean": "백화점",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00373",
+  "katakana": "スーパー",
+  "english": "supermarket",
+  "korean": "슈퍼마켓",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00374",
+  "katakana": "コンビニ",
+  "english": "convenience store",
+  "korean": "편의점",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00375",
+  "katakana": "ドラッグストア",
+  "english": "drugstore",
+  "korean": "드럭스토어",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00376",
+  "katakana": "マーケット",
+  "english": "market",
+  "korean": "시장",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00377",
+  "katakana": "モール",
+  "english": "mall",
+  "korean": "쇼핑몰",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00378",
+  "katakana": "アウトレット",
+  "english": "outlet",
+  "korean": "아울렛",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00379",
+  "katakana": "ブティック",
+  "english": "boutique",
+  "korean": "부티크",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00380",
+  "katakana": "フロア",
+  "english": "floor",
+  "korean": "층",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00381",
+  "katakana": "フロアガイド",
+  "english": "floor guide",
+  "korean": "층별 안내",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00382",
+  "katakana": "レジ",
+  "english": "cash register",
+  "korean": "계산대",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00383",
+  "katakana": "レシート",
+  "english": "receipt",
+  "korean": "영수증",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00384",
+  "katakana": "カゴ",
+  "english": "basket",
+  "korean": "바구니",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00385",
+  "katakana": "ショッピングバッグ",
+  "english": "shopping bag",
+  "korean": "쇼핑백",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00386",
+  "katakana": "ビニールバッグ",
+  "english": "plastic bag",
+  "korean": "비닐봉지",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00387",
+  "katakana": "ギフト",
+  "english": "gift",
+  "korean": "선물",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00388",
+  "katakana": "ギフトボックス",
+  "english": "gift box",
+  "korean": "선물 상자",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00389",
+  "katakana": "ラッピング",
+  "english": "wrapping",
+  "korean": "포장",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00390",
+  "katakana": "ポイント",
+  "english": "point",
+  "korean": "포인트",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00391",
+  "katakana": "ポイントカード",
+  "english": "point card",
+  "korean": "포인트 카드",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00392",
+  "katakana": "クーポン",
+  "english": "coupon",
+  "korean": "쿠폰",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00393",
+  "katakana": "セール",
+  "english": "sale",
+  "korean": "세일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00394",
+  "katakana": "タイムセール",
+  "english": "time sale",
+  "korean": "타임세일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00395",
+  "katakana": "バーゲン",
+  "english": "bargain",
+  "korean": "바겐세일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00396",
+  "katakana": "ディスカウント",
+  "english": "discount",
+  "korean": "할인",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00397",
+  "katakana": "プライス",
+  "english": "price",
+  "korean": "가격",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00398",
+  "katakana": "プライスタグ",
+  "english": "price tag",
+  "korean": "가격표",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00399",
+  "katakana": "ネット",
+  "english": "internet",
+  "korean": "인터넷",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00400",
+  "katakana": "オンラインショップ",
+  "english": "online shop",
+  "korean": "온라인 쇼핑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00401",
+  "katakana": "ブランド",
+  "english": "brand",
+  "korean": "브랜드",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00402",
+  "katakana": "ファッション",
+  "english": "fashion",
+  "korean": "패션",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00403",
+  "katakana": "スタイル",
+  "english": "style",
+  "korean": "스타일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00404",
+  "katakana": "デザイン",
+  "english": "design",
+  "korean": "디자인",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00405",
+  "katakana": "カラー",
+  "english": "color",
+  "korean": "색",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00406",
+  "katakana": "サイズ",
+  "english": "size",
+  "korean": "사이즈",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00407",
+  "katakana": "フィッティングルーム",
+  "english": "fitting room",
+  "korean": "탈의실",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00408",
+  "katakana": "フィット",
+  "english": "fit",
+  "korean": "맞음",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00409",
+  "katakana": "ワンサイズ",
+  "english": "one size",
+  "korean": "원사이즈",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00410",
+  "katakana": "フリーサイズ",
+  "english": "free size",
+  "korean": "프리사이즈",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00411",
+  "katakana": "エクストララージ",
+  "english": "extra large",
+  "korean": "XL",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00412",
+  "katakana": "ロング",
+  "english": "long",
+  "korean": "긴",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00413",
+  "katakana": "ショート",
+  "english": "short",
+  "korean": "짧은",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00414",
+  "katakana": "スリム",
+  "english": "slim",
+  "korean": "슬림",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00415",
+  "katakana": "ルーズ",
+  "english": "loose",
+  "korean": "헐렁한",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00416",
+  "katakana": "タイト",
+  "english": "tight",
+  "korean": "꽉 끼는",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00417",
+  "katakana": "ストレッチ",
+  "english": "stretch",
+  "korean": "신축성",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00418",
+  "katakana": "シャツ",
+  "english": "shirt",
+  "korean": "셔츠",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00419",
+  "katakana": "ブラウス",
+  "english": "blouse",
+  "korean": "블라우스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00420",
+  "katakana": "ジャケット",
+  "english": "jacket",
+  "korean": "재킷",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00421",
+  "katakana": "コート",
+  "english": "coat",
+  "korean": "코트",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00422",
+  "katakana": "ダウン",
+  "english": "down jacket",
+  "korean": "패딩",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00423",
+  "katakana": "カーディガン",
+  "english": "cardigan",
+  "korean": "가디건",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00424",
+  "katakana": "セーター",
+  "english": "sweater",
+  "korean": "스웨터",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00425",
+  "katakana": "パーカー",
+  "english": "hoodie",
+  "korean": "후드티",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00426",
+  "katakana": "スカート",
+  "english": "skirt",
+  "korean": "치마",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00427",
+  "katakana": "ワンピース",
+  "english": "one-piece",
+  "korean": "원피스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00428",
+  "katakana": "パンツ",
+  "english": "pants",
+  "korean": "바지",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00429",
+  "katakana": "ジーンズ",
+  "english": "jeans",
+  "korean": "청바지",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00430",
+  "katakana": "ショートパンツ",
+  "english": "shorts",
+  "korean": "반바지",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00431",
+  "katakana": "スーツ",
+  "english": "suit",
+  "korean": "정장",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00432",
+  "katakana": "ネクタイ",
+  "english": "necktie",
+  "korean": "넥타이",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00433",
+  "katakana": "ソックス",
+  "english": "socks",
+  "korean": "양말",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00434",
+  "katakana": "ストッキング",
+  "english": "stockings",
+  "korean": "스타킹",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00435",
+  "katakana": "パジャマ",
+  "english": "pajamas",
+  "korean": "잠옷",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00436",
+  "katakana": "ランジェリー",
+  "english": "lingerie",
+  "korean": "속옷",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00437",
+  "katakana": "ブラジャー",
+  "english": "bra",
+  "korean": "브라",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00438",
+  "katakana": "シューズ",
+  "english": "shoes",
+  "korean": "신발",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00439",
+  "katakana": "スニーカー",
+  "english": "sneakers",
+  "korean": "운동화",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00440",
+  "katakana": "サンダル",
+  "english": "sandals",
+  "korean": "샌들",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00441",
+  "katakana": "ブーツ",
+  "english": "boots",
+  "korean": "부츠",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00442",
+  "katakana": "パンプス",
+  "english": "pumps",
+  "korean": "펌프스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00443",
+  "katakana": "ヒール",
+  "english": "heel",
+  "korean": "굽",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00444",
+  "katakana": "ハイヒール",
+  "english": "high heel",
+  "korean": "하이힐",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00445",
+  "katakana": "ローファー",
+  "english": "loafers",
+  "korean": "로퍼",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00446",
+  "katakana": "ベレー",
+  "english": "beret",
+  "korean": "베레모",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00447",
+  "katakana": "キャップ",
+  "english": "cap",
+  "korean": "모자",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00448",
+  "katakana": "ハット",
+  "english": "hat",
+  "korean": "모자",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00449",
+  "katakana": "マフラー",
+  "english": "muffler",
+  "korean": "목도리",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00450",
+  "katakana": "グローブ",
+  "english": "glove",
+  "korean": "장갑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00451",
+  "katakana": "ミトン",
+  "english": "mitten",
+  "korean": "벙어리장갑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00452",
+  "katakana": "サングラス",
+  "english": "sunglasses",
+  "korean": "선글라스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00453",
+  "katakana": "メガネ",
+  "english": "glasses",
+  "korean": "안경",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00454",
+  "katakana": "ネックレス",
+  "english": "necklace",
+  "korean": "목걸이",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00455",
+  "katakana": "ピアス",
+  "english": "earrings",
+  "korean": "귀걸이",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00456",
+  "katakana": "イヤリング",
+  "english": "earring",
+  "korean": "귀걸이",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00457",
+  "katakana": "リング",
+  "english": "ring",
+  "korean": "반지",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00458",
+  "katakana": "ブレスレット",
+  "english": "bracelet",
+  "korean": "팔찌",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00459",
+  "katakana": "ブローチ",
+  "english": "brooch",
+  "korean": "브로치",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00460",
+  "katakana": "ウォッチ",
+  "english": "watch",
+  "korean": "시계",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00461",
+  "katakana": "ハンドバッグ",
+  "english": "handbag",
+  "korean": "핸드백",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00462",
+  "katakana": "ショルダーバッグ",
+  "english": "shoulder bag",
+  "korean": "숄더백",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00463",
+  "katakana": "ウォレット",
+  "english": "wallet",
+  "korean": "지갑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00464",
+  "katakana": "ケース",
+  "english": "case",
+  "korean": "케이스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00465",
+  "katakana": "スマホケース",
+  "english": "phone case",
+  "korean": "휴대폰 케이스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00466",
+  "katakana": "ハンカチ",
+  "english": "handkerchief",
+  "korean": "손수건",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00467",
+  "katakana": "ファイル",
+  "english": "file",
+  "korean": "파일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00468",
+  "katakana": "フォルダー",
+  "english": "folder",
+  "korean": "폴더",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00469",
+  "katakana": "カレンダー",
+  "english": "calendar",
+  "korean": "달력",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00470",
+  "katakana": "ポスター",
+  "english": "poster",
+  "korean": "포스터",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00471",
+  "katakana": "ギフトカード",
+  "english": "gift card",
+  "korean": "상품권",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00472",
+  "katakana": "ラベル",
+  "english": "label",
+  "korean": "라벨",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00473",
+  "katakana": "シール",
+  "english": "sticker",
+  "korean": "스티커",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00474",
+  "katakana": "グラス",
+  "english": "glass",
+  "korean": "유리잔",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00475",
+  "katakana": "マグカップ",
+  "english": "mug",
+  "korean": "머그컵",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00476",
+  "katakana": "プレート",
+  "english": "plate",
+  "korean": "접시",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00477",
+  "katakana": "ボウル",
+  "english": "bowl",
+  "korean": "그릇",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00478",
+  "katakana": "トレー",
+  "english": "tray",
+  "korean": "쟁반",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00479",
+  "katakana": "ポット",
+  "english": "pot",
+  "korean": "주전자",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00480",
+  "katakana": "フライパン",
+  "english": "frying pan",
+  "korean": "프라이팬",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00481",
+  "katakana": "ナイフ",
+  "english": "knife",
+  "korean": "칼",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00482",
+  "katakana": "フォーク",
+  "english": "fork",
+  "korean": "포크",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00483",
+  "katakana": "スプーン",
+  "english": "spoon",
+  "korean": "숟가락",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00484",
+  "katakana": "ナプキン",
+  "english": "napkin",
+  "korean": "냅킨",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00485",
+  "katakana": "ストロー",
+  "english": "straw",
+  "korean": "빨대",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00486",
+  "katakana": "コンディショナー",
+  "english": "conditioner",
+  "korean": "컨디셔너",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00487",
+  "katakana": "ボディソープ",
+  "english": "body soap",
+  "korean": "바디워시",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00488",
+  "katakana": "ハンドクリーム",
+  "english": "hand cream",
+  "korean": "핸드크림",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00489",
+  "katakana": "ファンデーション",
+  "english": "foundation",
+  "korean": "파운데이션",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00490",
+  "katakana": "リップ",
+  "english": "lip",
+  "korean": "립",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00491",
+  "katakana": "マスカラ",
+  "english": "mascara",
+  "korean": "마스카라",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00492",
+  "katakana": "アイシャドウ",
+  "english": "eyeshadow",
+  "korean": "아이섀도",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00493",
+  "katakana": "ネイル",
+  "english": "nail",
+  "korean": "네일",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00494",
+  "katakana": "ブラシ",
+  "english": "brush",
+  "korean": "브러시",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00495",
+  "katakana": "コスメ",
+  "english": "cosmetics",
+  "korean": "화장품",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00496",
+  "katakana": "マスク",
+  "english": "mask",
+  "korean": "마스크",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00497",
+  "katakana": "ベビー",
+  "english": "baby",
+  "korean": "아기",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00498",
+  "katakana": "ベビーカー",
+  "english": "stroller",
+  "korean": "유모차",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00499",
+  "katakana": "カメラ",
+  "english": "camera",
+  "korean": "카메라",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00500",
+  "katakana": "フィルム",
+  "english": "film",
+  "korean": "필름",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00501",
+  "katakana": "バッテリー",
+  "english": "battery",
+  "korean": "배터리",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00502",
+  "katakana": "チャージャー",
+  "english": "charger",
+  "korean": "충전기",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00503",
+  "katakana": "イヤホン",
+  "english": "earphones",
+  "korean": "이어폰",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00504",
+  "katakana": "ヘッドホン",
+  "english": "headphones",
+  "korean": "헤드폰",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00505",
+  "katakana": "スピーカー",
+  "english": "speaker",
+  "korean": "스피커",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00506",
+  "katakana": "テレビ",
+  "english": "TV",
+  "korean": "텔레비전",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00507",
+  "katakana": "ラジオ",
+  "english": "radio",
+  "korean": "라디오",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00508",
+  "katakana": "パソコン",
+  "english": "PC",
+  "korean": "컴퓨터",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00509",
+  "katakana": "スマホ",
+  "english": "smartphone",
+  "korean": "스마트폰",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00510",
+  "katakana": "ビル",
+  "english": "building",
+  "korean": "빌딩",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00511",
+  "katakana": "マンション",
+  "english": "apartment",
+  "korean": "아파트",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00512",
+  "katakana": "ホテルビル",
+  "english": "hotel building",
+  "korean": "호텔 건물",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00513",
+  "katakana": "ビルディング",
+  "english": "building",
+  "korean": "건물",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00514",
+  "katakana": "パーク",
+  "english": "park",
+  "korean": "공원",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00515",
+  "katakana": "ガーデン",
+  "english": "garden",
+  "korean": "정원",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00516",
+  "katakana": "プール",
+  "english": "pool",
+  "korean": "수영장",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00517",
+  "katakana": "ジム",
+  "english": "gym",
+  "korean": "헬스장",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00518",
+  "katakana": "スタジアム",
+  "english": "stadium",
+  "korean": "경기장",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00519",
+  "katakana": "シアター",
+  "english": "theater",
+  "korean": "극장",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00520",
+  "katakana": "シネマ",
+  "english": "cinema",
+  "korean": "영화관",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00521",
+  "katakana": "ミュージアム",
+  "english": "museum",
+  "korean": "박물관",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00522",
+  "katakana": "ギャラリー",
+  "english": "gallery",
+  "korean": "갤러리",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00523",
+  "katakana": "ライブハウス",
+  "english": "live house",
+  "korean": "라이브 하우스",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00524",
+  "katakana": "カラオケ",
+  "english": "karaoke",
+  "korean": "노래방",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00525",
+  "katakana": "ゲームセンター",
+  "english": "game center",
+  "korean": "오락실",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00526",
+  "katakana": "ボウリング",
+  "english": "bowling",
+  "korean": "볼링",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00527",
+  "katakana": "ビリヤード",
+  "english": "billiards",
+  "korean": "당구",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00528",
+  "katakana": "ネットカフェ",
+  "english": "net cafe",
+  "korean": "PC방",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00529",
+  "katakana": "カフェ",
+  "english": "cafe",
+  "korean": "카페",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00530",
+  "katakana": "バー",
+  "english": "bar",
+  "korean": "바",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00531",
+  "katakana": "レストラン",
+  "english": "restaurant",
+  "korean": "레스토랑",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00532",
+  "katakana": "ファストフード",
+  "english": "fast food",
+  "korean": "패스트푸드",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00533",
+  "katakana": "フードコート",
+  "english": "food court",
+  "korean": "푸드코트",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00534",
+  "katakana": "バーガー",
+  "english": "burger",
+  "korean": "버거",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00535",
+  "katakana": "テイクアウト",
+  "english": "takeout",
+  "korean": "포장",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00536",
+  "katakana": "イートイン",
+  "english": "eat-in",
+  "korean": "매장 식사",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00537",
+  "katakana": "デリバリー",
+  "english": "delivery",
+  "korean": "배달",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00538",
+  "katakana": "ドライブスルー",
+  "english": "drive-thru",
+  "korean": "드라이브스루",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00539",
+  "katakana": "ブース",
+  "english": "booth",
+  "korean": "부스",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00540",
+  "katakana": "ベンチ",
+  "english": "bench",
+  "korean": "벤치",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00541",
+  "katakana": "ポスト",
+  "english": "mailbox",
+  "korean": "우체통",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00542",
+  "katakana": "エリア",
+  "english": "area",
+  "korean": "지역",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00543",
+  "katakana": "タワー",
+  "english": "tower",
+  "korean": "타워",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00544",
+  "katakana": "クロス",
+  "english": "cross",
+  "korean": "교차",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00545",
+  "katakana": "シグナル",
+  "english": "signal",
+  "korean": "신호등",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00546",
+  "katakana": "パトカー",
+  "english": "police car",
+  "korean": "경찰차",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00547",
+  "katakana": "ポリス",
+  "english": "police",
+  "korean": "경찰",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00548",
+  "katakana": "ホスピタル",
+  "english": "hospital",
+  "korean": "병원",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00549",
+  "katakana": "クリニック",
+  "english": "clinic",
+  "korean": "의원",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00550",
+  "katakana": "ドクター",
+  "english": "doctor",
+  "korean": "의사",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00551",
+  "katakana": "ナース",
+  "english": "nurse",
+  "korean": "간호사",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00552",
+  "katakana": "ファーマシー",
+  "english": "pharmacy",
+  "korean": "약국",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00553",
+  "katakana": "メディシン",
+  "english": "medicine",
+  "korean": "약",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00554",
+  "katakana": "ピル",
+  "english": "pill",
+  "korean": "알약",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00555",
+  "katakana": "カプセル",
+  "english": "capsule",
+  "korean": "캡슐",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00556",
+  "katakana": "ビタミン",
+  "english": "vitamin",
+  "korean": "비타민",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00557",
+  "katakana": "バンドエイド",
+  "english": "bandage",
+  "korean": "반창고",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00558",
+  "katakana": "ガーゼ",
+  "english": "gauze",
+  "korean": "거즈",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00559",
+  "katakana": "ギプス",
+  "english": "cast",
+  "korean": "깁스",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00560",
+  "katakana": "レントゲン",
+  "english": "X-ray",
+  "korean": "엑스레이",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00561",
+  "katakana": "アレルギー",
+  "english": "allergy",
+  "korean": "알레르기",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00562",
+  "katakana": "ワクチン",
+  "english": "vaccine",
+  "korean": "백신",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00563",
+  "katakana": "インフルエンザ",
+  "english": "flu",
+  "korean": "독감",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00564",
+  "katakana": "ケガ",
+  "english": "injury",
+  "korean": "상처",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00565",
+  "katakana": "エマージェンシー",
+  "english": "emergency",
+  "korean": "응급",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00566",
+  "katakana": "ファーストエイド",
+  "english": "first aid",
+  "korean": "응급처치",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00567",
+  "katakana": "アイスパック",
+  "english": "ice pack",
+  "korean": "아이스팩",
+  "place": "병원"
+ },
+ {
+  "id": "ez-00568",
+  "katakana": "ドリンク",
+  "english": "drink",
+  "korean": "음료",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00569",
+  "katakana": "コーヒーマシン",
+  "english": "coffee machine",
+  "korean": "커피머신",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00570",
+  "katakana": "ホットスナック",
+  "english": "hot snack",
+  "korean": "핫스낵",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00571",
+  "katakana": "スナック",
+  "english": "snack",
+  "korean": "스낵",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00572",
+  "katakana": "ガム",
+  "english": "gum",
+  "korean": "껌",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00573",
+  "katakana": "キャンディー",
+  "english": "candy",
+  "korean": "사탕",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00574",
+  "katakana": "ビスケット",
+  "english": "biscuit",
+  "korean": "비스킷",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00575",
+  "katakana": "ライター",
+  "english": "lighter",
+  "korean": "라이터",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00576",
+  "katakana": "チャージ",
+  "english": "charge",
+  "korean": "충전",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00577",
+  "katakana": "ケーブル",
+  "english": "cable",
+  "korean": "케이블",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00578",
+  "katakana": "ウェットティッシュ",
+  "english": "wet tissue",
+  "korean": "물티슈",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00579",
+  "katakana": "ヘアゴム",
+  "english": "hair tie",
+  "korean": "머리끈",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00580",
+  "katakana": "ヘアピン",
+  "english": "hairpin",
+  "korean": "머리핀",
+  "place": "편의점"
+ },
+ {
+  "id": "ez-00581",
+  "katakana": "ハンガー",
+  "english": "hanger",
+  "korean": "옷걸이",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00582",
+  "katakana": "ラック",
+  "english": "rack",
+  "korean": "선반",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00583",
+  "katakana": "キャビネット",
+  "english": "cabinet",
+  "korean": "캐비닛",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00584",
+  "katakana": "バケツ",
+  "english": "bucket",
+  "korean": "양동이",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00585",
+  "katakana": "リサイクル",
+  "english": "recycle",
+  "korean": "재활용",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00586",
+  "katakana": "カン",
+  "english": "can",
+  "korean": "캔",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00587",
+  "katakana": "ボランティア",
+  "english": "volunteer",
+  "korean": "자원봉사",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00588",
+  "katakana": "ニュース",
+  "english": "news",
+  "korean": "뉴스",
+  "place": "생활"
+ },
+ {
+  "id": "ez-00589",
+  "katakana": "バンク",
+  "english": "bank",
+  "korean": "은행",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00590",
+  "katakana": "キャッシュカード",
+  "english": "cash card",
+  "korean": "체크카드",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00591",
+  "katakana": "カードローン",
+  "english": "card loan",
+  "korean": "카드 대출",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00592",
+  "katakana": "ローン",
+  "english": "loan",
+  "korean": "대출",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00593",
+  "katakana": "ボーナス",
+  "english": "bonus",
+  "korean": "보너스",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00594",
+  "katakana": "マネー",
+  "english": "money",
+  "korean": "돈",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00595",
+  "katakana": "コイン",
+  "english": "coin",
+  "korean": "동전",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00596",
+  "katakana": "ドル",
+  "english": "dollar",
+  "korean": "달러",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00597",
+  "katakana": "ユーロ",
+  "english": "euro",
+  "korean": "유로",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00598",
+  "katakana": "ウォン",
+  "english": "won",
+  "korean": "원",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00599",
+  "katakana": "ポンド",
+  "english": "pound",
+  "korean": "파운드",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00600",
+  "katakana": "ペイ",
+  "english": "pay",
+  "korean": "결제",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00601",
+  "katakana": "ペイメント",
+  "english": "payment",
+  "korean": "결제",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00602",
+  "katakana": "インターネットバンキング",
+  "english": "internet banking",
+  "korean": "인터넷 뱅킹",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00603",
+  "katakana": "レート",
+  "english": "rate",
+  "korean": "환율",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00604",
+  "katakana": "パスワード",
+  "english": "password",
+  "korean": "비밀번호",
+  "place": "은행"
+ },
+ {
+  "id": "ez-00605",
+  "katakana": "ゴルフ",
+  "english": "golf",
+  "korean": "골프",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00606",
+  "katakana": "ゴルフクラブ",
+  "english": "golf club",
+  "korean": "골프채",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00607",
+  "katakana": "ゴルフボール",
+  "english": "golf ball",
+  "korean": "골프공",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00608",
+  "katakana": "ゴルフバッグ",
+  "english": "golf bag",
+  "korean": "골프백",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00609",
+  "katakana": "ティーグラウンド",
+  "english": "tee box",
+  "korean": "티잉그라운드",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00610",
+  "katakana": "グリーン",
+  "english": "green",
+  "korean": "그린",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00611",
+  "katakana": "フェアウェイ",
+  "english": "fairway",
+  "korean": "페어웨이",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00612",
+  "katakana": "バンカー",
+  "english": "bunker",
+  "korean": "벙커",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00613",
+  "katakana": "ラフ",
+  "english": "rough",
+  "korean": "러프",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00614",
+  "katakana": "ホール",
+  "english": "hole",
+  "korean": "홀",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00615",
+  "katakana": "ピン",
+  "english": "pin",
+  "korean": "깃대",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00616",
+  "katakana": "パター",
+  "english": "putter",
+  "korean": "퍼터",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00617",
+  "katakana": "ドライバー",
+  "english": "driver",
+  "korean": "드라이버",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00618",
+  "katakana": "アイアン",
+  "english": "iron",
+  "korean": "아이언",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00619",
+  "katakana": "ウッド",
+  "english": "wood",
+  "korean": "우드",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00620",
+  "katakana": "ウェッジ",
+  "english": "wedge",
+  "korean": "웨지",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00621",
+  "katakana": "キャディ",
+  "english": "caddie",
+  "korean": "캐디",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00622",
+  "katakana": "スコア",
+  "english": "score",
+  "korean": "스코어",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00623",
+  "katakana": "パー",
+  "english": "par",
+  "korean": "파",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00624",
+  "katakana": "バーディー",
+  "english": "birdie",
+  "korean": "버디",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00625",
+  "katakana": "イーグル",
+  "english": "eagle",
+  "korean": "이글",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00626",
+  "katakana": "ボギー",
+  "english": "bogey",
+  "korean": "보기",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00627",
+  "katakana": "ホールインワン",
+  "english": "hole in one",
+  "korean": "홀인원",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00628",
+  "katakana": "ダブルボギー",
+  "english": "double bogey",
+  "korean": "더블 보기",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00629",
+  "katakana": "プレー",
+  "english": "play",
+  "korean": "플레이",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00630",
+  "katakana": "スイング",
+  "english": "swing",
+  "korean": "스윙",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00631",
+  "katakana": "ショット",
+  "english": "shot",
+  "korean": "샷",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00632",
+  "katakana": "グリップ",
+  "english": "grip",
+  "korean": "그립",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00633",
+  "katakana": "ヘッド",
+  "english": "head",
+  "korean": "헤드",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00634",
+  "katakana": "ティーショット",
+  "english": "tee shot",
+  "korean": "티샷",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00635",
+  "katakana": "アプローチ",
+  "english": "approach",
+  "korean": "어프로치",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00636",
+  "katakana": "パット",
+  "english": "putt",
+  "korean": "퍼트",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00637",
+  "katakana": "カップ",
+  "english": "cup",
+  "korean": "컵",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00638",
+  "katakana": "スパイク",
+  "english": "spikes",
+  "korean": "스파이크",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00639",
+  "katakana": "ポロシャツ",
+  "english": "polo shirt",
+  "korean": "폴로셔츠",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00640",
+  "katakana": "ビジター",
+  "english": "visitor",
+  "korean": "방문객",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00641",
+  "katakana": "メンバー",
+  "english": "member",
+  "korean": "회원",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00642",
+  "katakana": "ラウンド",
+  "english": "round",
+  "korean": "라운드",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00643",
+  "katakana": "コース",
+  "english": "course",
+  "korean": "코스",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00644",
+  "katakana": "クラブハウス",
+  "english": "clubhouse",
+  "korean": "클럽하우스",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00645",
+  "katakana": "ドリンクカート",
+  "english": "drink cart",
+  "korean": "음료 카트",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00646",
+  "katakana": "チャンピオン",
+  "english": "champion",
+  "korean": "챔피언",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00647",
+  "katakana": "トーナメント",
+  "english": "tournament",
+  "korean": "토너먼트",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00648",
+  "katakana": "ランキング",
+  "english": "ranking",
+  "korean": "랭킹",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00649",
+  "katakana": "チャンネル",
+  "english": "channel",
+  "korean": "채널",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00650",
+  "katakana": "リモコン",
+  "english": "remote control",
+  "korean": "리모컨",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00651",
+  "katakana": "ボリューム",
+  "english": "volume",
+  "korean": "볼륨",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00652",
+  "katakana": "ドラマ",
+  "english": "drama",
+  "korean": "드라마",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00653",
+  "katakana": "バラエティ",
+  "english": "variety",
+  "korean": "예능",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00654",
+  "katakana": "アニメ",
+  "english": "anime",
+  "korean": "애니메이션",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00655",
+  "katakana": "コメディ",
+  "english": "comedy",
+  "korean": "코미디",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00656",
+  "katakana": "ミステリー",
+  "english": "mystery",
+  "korean": "미스터리",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00657",
+  "katakana": "ホラー",
+  "english": "horror",
+  "korean": "공포",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00658",
+  "katakana": "サスペンス",
+  "english": "suspense",
+  "korean": "서스펜스",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00659",
+  "katakana": "ドキュメンタリー",
+  "english": "documentary",
+  "korean": "다큐멘터리",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00660",
+  "katakana": "ライブ",
+  "english": "live",
+  "korean": "생방송",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00661",
+  "katakana": "コンサート",
+  "english": "concert",
+  "korean": "콘서트",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00662",
+  "katakana": "ショー",
+  "english": "show",
+  "korean": "쇼",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00663",
+  "katakana": "クイズ",
+  "english": "quiz",
+  "korean": "퀴즈",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00664",
+  "katakana": "スポーツ",
+  "english": "sports",
+  "korean": "스포츠",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00665",
+  "katakana": "サッカー",
+  "english": "soccer",
+  "korean": "축구",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00666",
+  "katakana": "ベースボール",
+  "english": "baseball",
+  "korean": "야구",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00667",
+  "katakana": "バスケットボール",
+  "english": "basketball",
+  "korean": "농구",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00668",
+  "katakana": "バレーボール",
+  "english": "volleyball",
+  "korean": "배구",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00669",
+  "katakana": "テニス",
+  "english": "tennis",
+  "korean": "테니스",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00670",
+  "katakana": "マラソン",
+  "english": "marathon",
+  "korean": "마라톤",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00671",
+  "katakana": "オリンピック",
+  "english": "Olympics",
+  "korean": "올림픽",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00672",
+  "katakana": "ワールドカップ",
+  "english": "World Cup",
+  "korean": "월드컵",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00673",
+  "katakana": "ドラフト",
+  "english": "draft",
+  "korean": "드래프트",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00674",
+  "katakana": "スター",
+  "english": "star",
+  "korean": "스타",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00675",
+  "katakana": "アイドル",
+  "english": "idol",
+  "korean": "아이돌",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00676",
+  "katakana": "タレント",
+  "english": "talent",
+  "korean": "연예인",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00677",
+  "katakana": "モデル",
+  "english": "model",
+  "korean": "모델",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00678",
+  "katakana": "アナウンサー",
+  "english": "announcer",
+  "korean": "아나운서",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00679",
+  "katakana": "ナレーション",
+  "english": "narration",
+  "korean": "내레이션",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00680",
+  "katakana": "インタビュー",
+  "english": "interview",
+  "korean": "인터뷰",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00681",
+  "katakana": "シーン",
+  "english": "scene",
+  "korean": "장면",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00682",
+  "katakana": "エピソード",
+  "english": "episode",
+  "korean": "에피소드",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00683",
+  "katakana": "シリーズ",
+  "english": "series",
+  "korean": "시리즈",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00684",
+  "katakana": "トレーラー",
+  "english": "trailer",
+  "korean": "예고편",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00685",
+  "katakana": "ムービー",
+  "english": "movie",
+  "korean": "영화",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00686",
+  "katakana": "ヒット",
+  "english": "hit",
+  "korean": "히트",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00687",
+  "katakana": "ファン",
+  "english": "fan",
+  "korean": "팬",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00688",
+  "katakana": "ストーリー",
+  "english": "story",
+  "korean": "이야기",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00689",
+  "katakana": "キャラクター",
+  "english": "character",
+  "korean": "캐릭터",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00690",
+  "katakana": "ヒロイン",
+  "english": "heroine",
+  "korean": "여주인공",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00691",
+  "katakana": "ヒーロー",
+  "english": "hero",
+  "korean": "영웅",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00692",
+  "katakana": "ファンタジー",
+  "english": "fantasy",
+  "korean": "판타지",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00693",
+  "katakana": "アクション",
+  "english": "action",
+  "korean": "액션",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00694",
+  "katakana": "ロマンス",
+  "english": "romance",
+  "korean": "로맨스",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00695",
+  "katakana": "ミュージック",
+  "english": "music",
+  "korean": "음악",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00696",
+  "katakana": "チャート",
+  "english": "chart",
+  "korean": "차트",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00697",
+  "katakana": "ダンス",
+  "english": "dance",
+  "korean": "댄스",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00698",
+  "katakana": "ステージ",
+  "english": "stage",
+  "korean": "무대",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00699",
+  "katakana": "オーディション",
+  "english": "audition",
+  "korean": "오디션",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00700",
+  "katakana": "ニューモデル",
+  "english": "new model",
+  "korean": "신제품",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00701",
+  "katakana": "キャンペーン",
+  "english": "campaign",
+  "korean": "캠페인",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00702",
+  "katakana": "ポイントアップ",
+  "english": "point up",
+  "korean": "포인트 적립",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00703",
+  "katakana": "キャッシュバック",
+  "english": "cash back",
+  "korean": "캐시백",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00704",
+  "katakana": "ノベルティ",
+  "english": "novelty",
+  "korean": "사은품",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00705",
+  "katakana": "オープン",
+  "english": "open",
+  "korean": "오픈",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00706",
+  "katakana": "グランドオープン",
+  "english": "grand open",
+  "korean": "그랜드 오픈",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00707",
+  "katakana": "リニューアル",
+  "english": "renewal",
+  "korean": "리뉴얼",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00708",
+  "katakana": "シェア",
+  "english": "share",
+  "korean": "점유율",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00709",
+  "katakana": "デビュー",
+  "english": "debut",
+  "korean": "데뷔",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00710",
+  "katakana": "スペシャル",
+  "english": "special",
+  "korean": "스페셜",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00711",
+  "katakana": "エクストラ",
+  "english": "extra",
+  "korean": "엑스트라",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00712",
+  "katakana": "ポイントデー",
+  "english": "point day",
+  "korean": "포인트 데이",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00713",
+  "katakana": "ワンデー",
+  "english": "one day",
+  "korean": "원데이",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00714",
+  "katakana": "ウィークリー",
+  "english": "weekly",
+  "korean": "주간",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00715",
+  "katakana": "マンスリー",
+  "english": "monthly",
+  "korean": "월간",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00716",
+  "katakana": "デイリー",
+  "english": "daily",
+  "korean": "매일",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00717",
+  "katakana": "フェア",
+  "english": "fair",
+  "korean": "페어",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00718",
+  "katakana": "ブランドニュー",
+  "english": "brand new",
+  "korean": "새 상품",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00719",
+  "katakana": "ヘルシー",
+  "english": "healthy",
+  "korean": "건강한",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00720",
+  "katakana": "ビューティー",
+  "english": "beauty",
+  "korean": "뷰티",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00721",
+  "katakana": "ヘア",
+  "english": "hair",
+  "korean": "헤어",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00722",
+  "katakana": "スキンケア",
+  "english": "skin care",
+  "korean": "스킨케어",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00723",
+  "katakana": "メイク",
+  "english": "make-up",
+  "korean": "메이크업",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00724",
+  "katakana": "エステ",
+  "english": "beauty salon",
+  "korean": "에스테틱",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00725",
+  "katakana": "マッサージ",
+  "english": "massage",
+  "korean": "마사지",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00726",
+  "katakana": "リフレッシュ",
+  "english": "refresh",
+  "korean": "리프레시",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00727",
+  "katakana": "ドリーム",
+  "english": "dream",
+  "korean": "꿈",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00728",
+  "katakana": "パワー",
+  "english": "power",
+  "korean": "힘",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00729",
+  "katakana": "エナジー",
+  "english": "energy",
+  "korean": "에너지",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00730",
+  "katakana": "プレミアム",
+  "english": "premium",
+  "korean": "프리미엄",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00731",
+  "katakana": "エコ",
+  "english": "eco",
+  "korean": "친환경",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00732",
+  "katakana": "クリーン",
+  "english": "clean",
+  "korean": "깨끗한",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00733",
+  "katakana": "フレッシュ",
+  "english": "fresh",
+  "korean": "신선한",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00734",
+  "katakana": "ジューシー",
+  "english": "juicy",
+  "korean": "즙이 많은",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00735",
+  "katakana": "クリスピー",
+  "english": "crispy",
+  "korean": "바삭한",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00736",
+  "katakana": "クリーミー",
+  "english": "creamy",
+  "korean": "크리미한",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00737",
+  "katakana": "カフェイン",
+  "english": "caffeine",
+  "korean": "카페인",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00738",
+  "katakana": "カロリーオフ",
+  "english": "calorie off",
+  "korean": "저칼로리",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00739",
+  "katakana": "ゼロシュガー",
+  "english": "zero sugar",
+  "korean": "무설탕",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00740",
+  "katakana": "オートマチック",
+  "english": "automatic",
+  "korean": "자동",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00741",
+  "katakana": "ワイヤレス",
+  "english": "wireless",
+  "korean": "무선",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00742",
+  "katakana": "チャレンジ",
+  "english": "challenge",
+  "korean": "도전",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00743",
+  "katakana": "ゲット",
+  "english": "get",
+  "korean": "받기",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00744",
+  "katakana": "ゲットチャンス",
+  "english": "get chance",
+  "korean": "기회 잡기",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00745",
+  "katakana": "キャンペーンガール",
+  "english": "campaign girl",
+  "korean": "캠페인 모델",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00746",
+  "katakana": "ロゴ",
+  "english": "logo",
+  "korean": "로고",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00747",
+  "katakana": "コピー",
+  "english": "copy",
+  "korean": "문구",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00748",
+  "katakana": "イメージ",
+  "english": "image",
+  "korean": "이미지",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00749",
+  "katakana": "メッセージ",
+  "english": "message",
+  "korean": "메시지",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00750",
+  "katakana": "シンボル",
+  "english": "symbol",
+  "korean": "상징",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00751",
+  "katakana": "ホットドリンク",
+  "english": "hot drink",
+  "korean": "따뜻한 음료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00752",
+  "katakana": "アイスドリンク",
+  "english": "iced drink",
+  "korean": "차가운 음료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00753",
+  "katakana": "ソフトドリンク",
+  "english": "soft drink",
+  "korean": "청량음료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00754",
+  "katakana": "ドリンクメニュー",
+  "english": "drink menu",
+  "korean": "음료 메뉴",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00755",
+  "katakana": "フードメニュー",
+  "english": "food menu",
+  "korean": "음식 메뉴",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00756",
+  "katakana": "ランチセット",
+  "english": "lunch set",
+  "korean": "점심 세트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00757",
+  "katakana": "ディナーセット",
+  "english": "dinner set",
+  "korean": "저녁 세트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00758",
+  "katakana": "キッズセット",
+  "english": "kids set",
+  "korean": "어린이 세트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00759",
+  "katakana": "ファミリーセット",
+  "english": "family set",
+  "korean": "패밀리 세트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00760",
+  "katakana": "ハーフ",
+  "english": "half",
+  "korean": "반",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00761",
+  "katakana": "ダブルチーズ",
+  "english": "double cheese",
+  "korean": "더블치즈",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00762",
+  "katakana": "トッピング",
+  "english": "topping",
+  "korean": "토핑",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00763",
+  "katakana": "ソフト",
+  "english": "soft",
+  "korean": "부드러운",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00764",
+  "katakana": "ポップコーン",
+  "english": "popcorn",
+  "korean": "팝콘",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00765",
+  "katakana": "ポテトチップス",
+  "english": "potato chips",
+  "korean": "감자칩",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00766",
+  "katakana": "ピーナッツバター",
+  "english": "peanut butter",
+  "korean": "땅콩버터",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00767",
+  "katakana": "ジャムパン",
+  "english": "jam bread",
+  "korean": "잼빵",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00768",
+  "katakana": "カレーパン",
+  "english": "curry bread",
+  "korean": "카레빵",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00769",
+  "katakana": "メロンパン",
+  "english": "melon bread",
+  "korean": "멜론빵",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00770",
+  "katakana": "ベーグル",
+  "english": "bagel",
+  "korean": "베이글",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00771",
+  "katakana": "パフェ",
+  "english": "parfait",
+  "korean": "파르페",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00772",
+  "katakana": "ワッフルコーン",
+  "english": "waffle cone",
+  "korean": "와플콘",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00773",
+  "katakana": "カップアイス",
+  "english": "cup ice cream",
+  "korean": "컵 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00774",
+  "katakana": "チョコバー",
+  "english": "chocolate bar",
+  "korean": "초코바",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00775",
+  "katakana": "アイスキャンディー",
+  "english": "ice candy",
+  "korean": "아이스바",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00776",
+  "katakana": "ミルクコーヒー",
+  "english": "milk coffee",
+  "korean": "밀크커피",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00777",
+  "katakana": "カフェモカ",
+  "english": "cafe mocha",
+  "korean": "카페모카",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00778",
+  "katakana": "キャラメルマキアート",
+  "english": "caramel macchiato",
+  "korean": "카라멜 마키아토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00779",
+  "katakana": "マキアート",
+  "english": "macchiato",
+  "korean": "마키아토",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00780",
+  "katakana": "フラペチーノ",
+  "english": "frappuccino",
+  "korean": "프라푸치노",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00781",
+  "katakana": "ティーラテ",
+  "english": "tea latte",
+  "korean": "티라떼",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00782",
+  "katakana": "タピオカ",
+  "english": "tapioca",
+  "korean": "타피오카",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00783",
+  "katakana": "ミントティー",
+  "english": "mint tea",
+  "korean": "민트티",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00784",
+  "katakana": "ハーブティー",
+  "english": "herbal tea",
+  "korean": "허브티",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00785",
+  "katakana": "グリーンティー",
+  "english": "green tea",
+  "korean": "녹차",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00786",
+  "katakana": "ブラックティー",
+  "english": "black tea",
+  "korean": "홍차",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00787",
+  "katakana": "カモミール",
+  "english": "chamomile",
+  "korean": "카모마일",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00788",
+  "katakana": "ウーロン",
+  "english": "oolong",
+  "korean": "우롱차",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00789",
+  "katakana": "ジャスミン",
+  "english": "jasmine",
+  "korean": "재스민",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00790",
+  "katakana": "デカフェ",
+  "english": "decaf",
+  "korean": "디카페인",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00791",
+  "katakana": "ノンカフェイン",
+  "english": "caffeine-free",
+  "korean": "무카페인",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00792",
+  "katakana": "シングルショット",
+  "english": "single shot",
+  "korean": "싱글 샷",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00793",
+  "katakana": "ダブルショット",
+  "english": "double shot",
+  "korean": "더블 샷",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00794",
+  "katakana": "オーツミルク",
+  "english": "oat milk",
+  "korean": "오트 밀크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00795",
+  "katakana": "アーモンドミルク",
+  "english": "almond milk",
+  "korean": "아몬드 밀크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00796",
+  "katakana": "ソイミルク",
+  "english": "soy milk",
+  "korean": "두유",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00797",
+  "katakana": "ライス",
+  "english": "rice",
+  "korean": "밥",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00798",
+  "katakana": "ブレッド",
+  "english": "bread",
+  "korean": "빵",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00799",
+  "katakana": "ナン",
+  "english": "naan",
+  "korean": "난",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00800",
+  "katakana": "カリー",
+  "english": "curry",
+  "korean": "카레",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00801",
+  "katakana": "グリーンカレー",
+  "english": "green curry",
+  "korean": "그린 카레",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00802",
+  "katakana": "レッドカレー",
+  "english": "red curry",
+  "korean": "레드 카레",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00803",
+  "katakana": "シーフード",
+  "english": "seafood",
+  "korean": "해산물",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00804",
+  "katakana": "ミックス",
+  "english": "mix",
+  "korean": "믹스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00805",
+  "katakana": "ミックスジュース",
+  "english": "mixed juice",
+  "korean": "믹스주스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00806",
+  "katakana": "ホワイトソース",
+  "english": "white sauce",
+  "korean": "화이트소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00807",
+  "katakana": "トマトソース",
+  "english": "tomato sauce",
+  "korean": "토마토소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00808",
+  "katakana": "クリームソース",
+  "english": "cream sauce",
+  "korean": "크림소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00809",
+  "katakana": "バジル",
+  "english": "basil",
+  "korean": "바질",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00810",
+  "katakana": "シナモン",
+  "english": "cinnamon",
+  "korean": "시나몬",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00811",
+  "katakana": "ブラックペッパー",
+  "english": "black pepper",
+  "korean": "후춧가루",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00812",
+  "katakana": "ホットチリ",
+  "english": "hot chili",
+  "korean": "핫칠리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00813",
+  "katakana": "チリ",
+  "english": "chili",
+  "korean": "칠리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00814",
+  "katakana": "ペッパーソース",
+  "english": "pepper sauce",
+  "korean": "페퍼소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00815",
+  "katakana": "バーベキュー",
+  "english": "barbecue",
+  "korean": "바비큐",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00816",
+  "katakana": "バーベキューソース",
+  "english": "barbecue sauce",
+  "korean": "바비큐 소스",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00817",
+  "katakana": "テリヤキ",
+  "english": "teriyaki",
+  "korean": "데리야키",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00818",
+  "katakana": "スイートチリ",
+  "english": "sweet chili",
+  "korean": "스위트칠리",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00819",
+  "katakana": "サワークリーム",
+  "english": "sour cream",
+  "korean": "사워크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00820",
+  "katakana": "ブラウニー",
+  "english": "brownie",
+  "korean": "브라우니",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00821",
+  "katakana": "ゼリードリンク",
+  "english": "jelly drink",
+  "korean": "젤리음료",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00822",
+  "katakana": "スコーン",
+  "english": "scone",
+  "korean": "스콘",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00823",
+  "katakana": "ホットチョコレート",
+  "english": "hot chocolate",
+  "korean": "핫초콜릿",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00824",
+  "katakana": "チョコバナナ",
+  "english": "chocolate banana",
+  "korean": "초코 바나나",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00825",
+  "katakana": "カスタード",
+  "english": "custard",
+  "korean": "커스터드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00826",
+  "katakana": "ホイップ",
+  "english": "whip",
+  "korean": "휘핑",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00827",
+  "katakana": "バニラアイス",
+  "english": "vanilla ice",
+  "korean": "바닐라 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00828",
+  "katakana": "チョコアイス",
+  "english": "chocolate ice",
+  "korean": "초코 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00829",
+  "katakana": "ストロベリーアイス",
+  "english": "strawberry ice",
+  "korean": "딸기 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00830",
+  "katakana": "コーヒーアイス",
+  "english": "coffee ice",
+  "korean": "커피 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00831",
+  "katakana": "グリーンティーアイス",
+  "english": "green tea ice",
+  "korean": "녹차 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00832",
+  "katakana": "ヨーグルトアイス",
+  "english": "yogurt ice",
+  "korean": "요구르트 아이스크림",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00833",
+  "katakana": "サービス",
+  "english": "service",
+  "korean": "서비스",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00834",
+  "katakana": "サービスデスク",
+  "english": "service desk",
+  "korean": "서비스 데스크",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00835",
+  "katakana": "ユニフォーム",
+  "english": "uniform",
+  "korean": "유니폼",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00836",
+  "katakana": "フロントデスク",
+  "english": "front desk",
+  "korean": "프런트 데스크",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00837",
+  "katakana": "ウェルカムドリンク",
+  "english": "welcome drink",
+  "korean": "웰컴 드링크",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00838",
+  "katakana": "ドアマン",
+  "english": "doorman",
+  "korean": "도어맨",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00839",
+  "katakana": "ポーター",
+  "english": "porter",
+  "korean": "포터",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00840",
+  "katakana": "ウェイター",
+  "english": "waiter",
+  "korean": "웨이터",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00841",
+  "katakana": "ホールスタッフ",
+  "english": "hall staff",
+  "korean": "홀 직원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00842",
+  "katakana": "スタッフ",
+  "english": "staff",
+  "korean": "직원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00843",
+  "katakana": "ガイド",
+  "english": "guide",
+  "korean": "안내원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00844",
+  "katakana": "ツアー",
+  "english": "tour",
+  "korean": "투어",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00845",
+  "katakana": "ツアーバス",
+  "english": "tour bus",
+  "korean": "투어버스",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00846",
+  "katakana": "ミュージアムショップ",
+  "english": "museum shop",
+  "korean": "박물관 가게",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00847",
+  "katakana": "シティツアー",
+  "english": "city tour",
+  "korean": "시티투어",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00848",
+  "katakana": "パスポートチェック",
+  "english": "passport check",
+  "korean": "여권 확인",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00849",
+  "katakana": "ベルトコンベア",
+  "english": "belt conveyor",
+  "korean": "컨베이어 벨트",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00850",
+  "katakana": "スキャナー",
+  "english": "scanner",
+  "korean": "스캐너",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00851",
+  "katakana": "タグ",
+  "english": "tag",
+  "korean": "꼬리표",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00852",
+  "katakana": "ウェイティング",
+  "english": "waiting",
+  "korean": "대기",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00853",
+  "katakana": "シャトル",
+  "english": "shuttle",
+  "korean": "셔틀",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00854",
+  "katakana": "シャトルバス",
+  "english": "shuttle bus",
+  "korean": "셔틀버스",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00855",
+  "katakana": "リムジン",
+  "english": "limousine",
+  "korean": "리무진",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00856",
+  "katakana": "ダイヤル",
+  "english": "dial",
+  "korean": "다이얼",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00857",
+  "katakana": "ボリュームアップ",
+  "english": "volume up",
+  "korean": "볼륨 업",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00858",
+  "katakana": "ボリュームダウン",
+  "english": "volume down",
+  "korean": "볼륨 다운",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00859",
+  "katakana": "ミュート",
+  "english": "mute",
+  "korean": "음소거",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00860",
+  "katakana": "オートマ",
+  "english": "automatic",
+  "korean": "자동",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00861",
+  "katakana": "マニュアル",
+  "english": "manual",
+  "korean": "수동",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00862",
+  "katakana": "エアコン",
+  "english": "air conditioner",
+  "korean": "에어컨",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00863",
+  "katakana": "ドライ",
+  "english": "dry",
+  "korean": "건조",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00864",
+  "katakana": "ウェット",
+  "english": "wet",
+  "korean": "젖은",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00865",
+  "katakana": "カラフル",
+  "english": "colorful",
+  "korean": "알록달록",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00866",
+  "katakana": "マーク",
+  "english": "mark",
+  "korean": "표시",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00867",
+  "katakana": "ロゴマーク",
+  "english": "logo mark",
+  "korean": "로고 마크",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00868",
+  "katakana": "エマージェンシーボタン",
+  "english": "emergency button",
+  "korean": "비상 버튼",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00869",
+  "katakana": "ブザー",
+  "english": "buzzer",
+  "korean": "부저",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00870",
+  "katakana": "アラーム",
+  "english": "alarm",
+  "korean": "알람",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00871",
+  "katakana": "タイマー",
+  "english": "timer",
+  "korean": "타이머",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00872",
+  "katakana": "ドリンクホルダー",
+  "english": "drink holder",
+  "korean": "컵홀더",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00873",
+  "katakana": "ティーバッグ",
+  "english": "tea bag",
+  "korean": "티백",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00874",
+  "katakana": "スティック",
+  "english": "stick",
+  "korean": "스틱",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00875",
+  "katakana": "ボックスティッシュ",
+  "english": "box tissue",
+  "korean": "각티슈",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00876",
+  "katakana": "ウォーターボトル",
+  "english": "water bottle",
+  "korean": "물병",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00877",
+  "katakana": "タンブラー",
+  "english": "tumbler",
+  "korean": "텀블러",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00878",
+  "katakana": "ランチボックス",
+  "english": "lunch box",
+  "korean": "도시락통",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00879",
+  "katakana": "ピクニック",
+  "english": "picnic",
+  "korean": "피크닉",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00880",
+  "katakana": "バーベキューグリル",
+  "english": "barbecue grill",
+  "korean": "바비큐 그릴",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00881",
+  "katakana": "カセット",
+  "english": "cassette",
+  "korean": "카세트",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00882",
+  "katakana": "メモ",
+  "english": "memo",
+  "korean": "메모",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00883",
+  "katakana": "スケジュール",
+  "english": "schedule",
+  "korean": "일정",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00884",
+  "katakana": "ミーティング",
+  "english": "meeting",
+  "korean": "회의",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00885",
+  "katakana": "オフィス",
+  "english": "office",
+  "korean": "사무실",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00886",
+  "katakana": "ビジネス",
+  "english": "business",
+  "korean": "비즈니스",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00887",
+  "katakana": "ビジネスマン",
+  "english": "businessman",
+  "korean": "회사원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00888",
+  "katakana": "ビジネスホテル",
+  "english": "business hotel",
+  "korean": "비즈니스호텔",
+  "place": "숙박"
+ },
+ {
+  "id": "ez-00889",
+  "katakana": "ユーザー",
+  "english": "user",
+  "korean": "사용자",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00890",
+  "katakana": "メンバーズ",
+  "english": "members",
+  "korean": "회원",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00891",
+  "katakana": "ゲスト",
+  "english": "guest",
+  "korean": "손님",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00892",
+  "katakana": "ファミリー",
+  "english": "family",
+  "korean": "가족",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00893",
+  "katakana": "カップル",
+  "english": "couple",
+  "korean": "커플",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00894",
+  "katakana": "フレンド",
+  "english": "friend",
+  "korean": "친구",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00895",
+  "katakana": "キッズ",
+  "english": "kids",
+  "korean": "어린이",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00896",
+  "katakana": "ティーン",
+  "english": "teen",
+  "korean": "십대",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00897",
+  "katakana": "シニア",
+  "english": "senior",
+  "korean": "시니어",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00898",
+  "katakana": "レディース",
+  "english": "ladies",
+  "korean": "여성",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00899",
+  "katakana": "メンズ",
+  "english": "men's",
+  "korean": "남성",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00900",
+  "katakana": "ドッグ",
+  "english": "dog",
+  "korean": "개",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00901",
+  "katakana": "キャット",
+  "english": "cat",
+  "korean": "고양이",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00902",
+  "katakana": "ペットショップ",
+  "english": "pet shop",
+  "korean": "애완동물 가게",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00903",
+  "katakana": "フラワー",
+  "english": "flower",
+  "korean": "꽃",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00904",
+  "katakana": "ツリー",
+  "english": "tree",
+  "korean": "나무",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00905",
+  "katakana": "ハウス",
+  "english": "house",
+  "korean": "집",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00906",
+  "katakana": "キッチン",
+  "english": "kitchen",
+  "korean": "주방",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00907",
+  "katakana": "リビング",
+  "english": "living room",
+  "korean": "거실",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00908",
+  "katakana": "ベランダ",
+  "english": "veranda",
+  "korean": "베란다",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00909",
+  "katakana": "クリーニング",
+  "english": "cleaning",
+  "korean": "세탁",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00910",
+  "katakana": "コインランドリー",
+  "english": "coin laundry",
+  "korean": "코인세탁소",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00911",
+  "katakana": "ゴルフウェア",
+  "english": "golf wear",
+  "korean": "골프웨어",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00912",
+  "katakana": "ゴルフグローブ",
+  "english": "golf glove",
+  "korean": "골프장갑",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00913",
+  "katakana": "ゴルフシューズ",
+  "english": "golf shoes",
+  "korean": "골프화",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00914",
+  "katakana": "ゴルフレッスン",
+  "english": "golf lesson",
+  "korean": "골프 레슨",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00915",
+  "katakana": "ナイター",
+  "english": "night game",
+  "korean": "야간 경기",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00916",
+  "katakana": "テレビショッピング",
+  "english": "TV shopping",
+  "korean": "홈쇼핑",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00917",
+  "katakana": "ハイライト",
+  "english": "highlight",
+  "korean": "하이라이트",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00918",
+  "katakana": "スロー",
+  "english": "slow",
+  "korean": "느린",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00919",
+  "katakana": "リプレイ",
+  "english": "replay",
+  "korean": "리플레이",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00920",
+  "katakana": "ヒットソング",
+  "english": "hit song",
+  "korean": "히트곡",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00921",
+  "katakana": "ベストセラー",
+  "english": "best seller",
+  "korean": "베스트셀러",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00922",
+  "katakana": "ロングセラー",
+  "english": "long seller",
+  "korean": "롱셀러",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00923",
+  "katakana": "スペシャルプライス",
+  "english": "special price",
+  "korean": "특가",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00924",
+  "katakana": "ディスカウントショップ",
+  "english": "discount shop",
+  "korean": "할인점",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00925",
+  "katakana": "オーガニックコットン",
+  "english": "organic cotton",
+  "korean": "유기농 면",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00926",
+  "katakana": "ナチュラルフード",
+  "english": "natural food",
+  "korean": "자연식품",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00927",
+  "katakana": "フルーティー",
+  "english": "fruity",
+  "korean": "과일 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00928",
+  "katakana": "ミルキー",
+  "english": "milky",
+  "korean": "우유 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00929",
+  "katakana": "チョコレートフレーバー",
+  "english": "chocolate flavor",
+  "korean": "초콜릿 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00930",
+  "katakana": "バニラフレーバー",
+  "english": "vanilla flavor",
+  "korean": "바닐라 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00931",
+  "katakana": "ストロベリーフレーバー",
+  "english": "strawberry flavor",
+  "korean": "딸기 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00932",
+  "katakana": "レモンフレーバー",
+  "english": "lemon flavor",
+  "korean": "레몬 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00933",
+  "katakana": "ミントフレーバー",
+  "english": "mint flavor",
+  "korean": "민트 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00934",
+  "katakana": "コーラフレーバー",
+  "english": "cola flavor",
+  "korean": "콜라 맛",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00935",
+  "katakana": "ドリンクバー",
+  "english": "drink bar",
+  "korean": "음료 바",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00936",
+  "katakana": "アイスクーラー",
+  "english": "ice cooler",
+  "korean": "아이스박스",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00937",
+  "katakana": "オーダーボタン",
+  "english": "order button",
+  "korean": "주문 버튼",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00938",
+  "katakana": "タッチパネル",
+  "english": "touch panel",
+  "korean": "터치패널",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00939",
+  "katakana": "セルフレジ",
+  "english": "self checkout",
+  "korean": "셀프 계산대",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00940",
+  "katakana": "ポイントサービス",
+  "english": "point service",
+  "korean": "포인트 서비스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00941",
+  "katakana": "ショッピングカート",
+  "english": "shopping cart",
+  "korean": "장바구니",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00942",
+  "katakana": "ホットスポット",
+  "english": "hot spot",
+  "korean": "핫스팟",
+  "place": "거리"
+ },
+ {
+  "id": "ez-00943",
+  "katakana": "グリーンフィー",
+  "english": "green fee",
+  "korean": "그린피",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00944",
+  "katakana": "スコアカード",
+  "english": "scorecard",
+  "korean": "스코어카드",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00945",
+  "katakana": "ロッカールーム",
+  "english": "locker room",
+  "korean": "락커룸",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00946",
+  "katakana": "シャワールーム",
+  "english": "shower room",
+  "korean": "샤워실",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00947",
+  "katakana": "スポーツニュース",
+  "english": "sports news",
+  "korean": "스포츠 뉴스",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00948",
+  "katakana": "ワイドショー",
+  "english": "wide show",
+  "korean": "와이드쇼",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00949",
+  "katakana": "コマーシャル",
+  "english": "commercial",
+  "korean": "광고",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00950",
+  "katakana": "スポンサー",
+  "english": "sponsor",
+  "korean": "후원사",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00951",
+  "katakana": "キャスト",
+  "english": "cast",
+  "korean": "출연진",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00952",
+  "katakana": "スタジオ",
+  "english": "studio",
+  "korean": "스튜디오",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00953",
+  "katakana": "レポーター",
+  "english": "reporter",
+  "korean": "리포터",
+  "place": "TV"
+ },
+ {
+  "id": "ez-00954",
+  "katakana": "プレゼントキャンペーン",
+  "english": "present campaign",
+  "korean": "선물 캠페인",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00955",
+  "katakana": "ハッピーアワー",
+  "english": "happy hour",
+  "korean": "해피아워",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00956",
+  "katakana": "プラン",
+  "english": "plan",
+  "korean": "플랜",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00957",
+  "katakana": "パック",
+  "english": "pack",
+  "korean": "팩",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00958",
+  "katakana": "トリプル",
+  "english": "triple",
+  "korean": "트리플",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00959",
+  "katakana": "ミニ",
+  "english": "mini",
+  "korean": "미니",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00960",
+  "katakana": "マックス",
+  "english": "max",
+  "korean": "맥스",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00961",
+  "katakana": "リッチ",
+  "english": "rich",
+  "korean": "리치",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00962",
+  "katakana": "クリア",
+  "english": "clear",
+  "korean": "클리어",
+  "place": "광고"
+ },
+ {
+  "id": "ez-00963",
+  "katakana": "ナイト",
+  "english": "night",
+  "korean": "밤",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00964",
+  "katakana": "エチケット",
+  "english": "etiquette",
+  "korean": "에티켓",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00965",
+  "katakana": "セルフ",
+  "english": "self",
+  "korean": "셀프",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00966",
+  "katakana": "ベビーチェア",
+  "english": "baby chair",
+  "korean": "유아 의자",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00967",
+  "katakana": "ベビーベッド",
+  "english": "baby bed",
+  "korean": "아기 침대",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00968",
+  "katakana": "オムツ",
+  "english": "diaper",
+  "korean": "기저귀",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00969",
+  "katakana": "ゴミ",
+  "english": "garbage",
+  "korean": "쓰레기",
+  "place": "화장실"
+ },
+ {
+  "id": "ez-00970",
+  "katakana": "エアライン",
+  "english": "airline",
+  "korean": "항공사",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00971",
+  "katakana": "ゲートナンバー",
+  "english": "gate number",
+  "korean": "게이트 번호",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00972",
+  "katakana": "ディパーチャー",
+  "english": "departure",
+  "korean": "출발",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00973",
+  "katakana": "アライバル",
+  "english": "arrival",
+  "korean": "도착",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00974",
+  "katakana": "ドメスティック",
+  "english": "domestic",
+  "korean": "국내선",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00975",
+  "katakana": "インターナショナル",
+  "english": "international",
+  "korean": "국제선",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00976",
+  "katakana": "エアポートバス",
+  "english": "airport bus",
+  "korean": "공항버스",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00977",
+  "katakana": "コインロッカー",
+  "english": "coin locker",
+  "korean": "코인 보관함",
+  "place": "공항"
+ },
+ {
+  "id": "ez-00978",
+  "katakana": "キャッシュレス",
+  "english": "cashless",
+  "korean": "캐시리스",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00979",
+  "katakana": "ネットショッピング",
+  "english": "online shopping",
+  "korean": "온라인 쇼핑",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00980",
+  "katakana": "フロアマップ",
+  "english": "floor map",
+  "korean": "층별 지도",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00981",
+  "katakana": "フードホール",
+  "english": "food hall",
+  "korean": "푸드홀",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00982",
+  "katakana": "リボン",
+  "english": "ribbon",
+  "korean": "리본",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00983",
+  "katakana": "ジッパー",
+  "english": "zipper",
+  "korean": "지퍼",
+  "place": "쇼핑"
+ },
+ {
+  "id": "ez-00984",
+  "katakana": "ホットサンド",
+  "english": "hot sandwich",
+  "korean": "핫샌드",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00985",
+  "katakana": "ホットミルク",
+  "english": "hot milk",
+  "korean": "따뜻한 우유",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00986",
+  "katakana": "コーンフレーク",
+  "english": "corn flakes",
+  "korean": "콘플레이크",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00987",
+  "katakana": "ブラウンシュガー",
+  "english": "brown sugar",
+  "korean": "흑설탕",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00988",
+  "katakana": "ライチ",
+  "english": "lychee",
+  "korean": "리치",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00989",
+  "katakana": "チキンフライ",
+  "english": "chicken fry",
+  "korean": "치킨 튀김",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00990",
+  "katakana": "フィッシュ",
+  "english": "fish",
+  "korean": "생선",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00991",
+  "katakana": "ベーコンエッグ",
+  "english": "bacon egg",
+  "korean": "베이컨 에그",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00992",
+  "katakana": "エッグ",
+  "english": "egg",
+  "korean": "달걀",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00993",
+  "katakana": "チョコプリン",
+  "english": "chocolate pudding",
+  "korean": "초코 푸딩",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00994",
+  "katakana": "アップルパイ",
+  "english": "apple pie",
+  "korean": "애플파이",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00995",
+  "katakana": "チーズタルト",
+  "english": "cheese tart",
+  "korean": "치즈타르트",
+  "place": "메뉴"
+ },
+ {
+  "id": "ez-00996",
+  "katakana": "ベーシック",
+  "english": "basic",
+  "korean": "베이직",
+  "place": "일상"
+ },
+ {
+  "id": "ez-00997",
+  "katakana": "ドライビングレンジ",
+  "english": "driving range",
+  "korean": "연습장",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00998",
+  "katakana": "パターマット",
+  "english": "putting mat",
+  "korean": "퍼팅매트",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-00999",
+  "katakana": "ティーアップ",
+  "english": "tee up",
+  "korean": "티업",
+  "place": "골프장"
+ },
+ {
+  "id": "ez-01000",
+  "katakana": "ロッカーキー",
+  "english": "locker key",
+  "korean": "락커 열쇠",
+  "place": "골프장"
+ }
+]
