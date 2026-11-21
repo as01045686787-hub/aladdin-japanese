@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v12 · 26-11-21 12시 42분</span></h1>
+  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v15 · 26-11-22 00시 58분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -214,8 +214,10 @@ function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTM
 $("search").oninput=renderList;
 $("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="일본어_단어장.json";a.click();URL.revokeObjectURL(a.href)};
 $("importFile").onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(Array.isArray(data)){items=[...data,...items];persist();alert("가져왔습니다.")}}catch{alert("올바른 백업 파일이 아닙니다.")}};
+let marks=JSON.parse(localStorage.getItem("jphelper_marks")||"[]"),onlyMarks=false;
 let allCards=[],deck=[],deckIdx=-1,removedIds=JSON.parse(localStorage.getItem("jphelper_removed")||"[]");
 function speakJa(t){const u=new SpeechSynthesisUtterance(t);u.lang="ja-JP";speechSynthesis.speak(u)}
+function ngHtml(s){return [...s].map(ch=>ch==='ン'?'<span style="display:inline-block;text-align:center;line-height:1"><span style="display:block;font-size:8px;font-weight:400;color:#444;line-height:1.2">엉</span>ン</span>':ch).join('')}
 async function studyOpen(){
  if(!deck.length){const all=await (await fetch("katakana_easy_1000.json?v=10")).json();allCards=all;deck=all.filter(x=>!removedIds.includes(x.id))}
  if(deckIdx<0||!deck[deckIdx])showCard();
@@ -229,22 +231,28 @@ function showCard(){
 $("flash").onclick=()=>{if(deckIdx>=0)speakJa(deck[deckIdx].katakana)};
 $("revealBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];$("meaning").textContent=c.english+"\n"+c.korean};
 $("saveStudyBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];items.unshift({ko:c.korean+" ("+c.english+")",jp:c.katakana,created:Date.now()});persist();showCard();$("meaning").textContent="단어장에 저장했습니다."};
+function applyFilter(){$("allList").querySelectorAll("[data-id]").forEach(el=>{el.style.display=(!onlyMarks||marks.includes(el.dataset.id))?"block":"none"})}
 $("allBtn").onclick=async()=>{
  const open=$("allList").style.display==="none";
  if(open){
   if(!allCards.length)allCards=await (await fetch("katakana_easy_1000.json?v=10")).json();
-  $("allList").innerHTML=allCards.map((c,i)=>'<div style="border:2px solid #000;border-radius:16px;padding:14px;margin-bottom:12px">'+
+  $("allList").innerHTML='<div style="display:flex;gap:8px;margin-bottom:12px"><input id="numInput" type="number" placeholder="번호 입력" style="flex:1;min-height:52px;border:2px solid #000;border-radius:12px;padding:0 14px;font-size:18px;font-family:inherit"><button id="numGo" type="button" aria-label="찾기" style="width:60px;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:20px">🔍</button></div><button id="markFilter" type="button" style="width:100%;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:18px;font-weight:700;margin-bottom:12px">'+(onlyMarks?"전체 보기":"책갈피만 보기")+'</button>'+allCards.map((c,i)=>'<div id="kc-'+(i+1)+'" data-id="'+c.id+'" style="border:2px solid #000;border-radius:16px;padding:14px;margin-bottom:12px"><div style="font-size:14px;font-weight:700;margin-bottom:6px">'+(i+1)+'</div>'+
    '<div style="display:flex;align-items:center;gap:10px">'+
-    '<div data-k="'+c.katakana+'" style="flex:1;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:32px;font-weight:700;cursor:pointer">'+c.katakana+
+    '<div data-k="'+c.katakana+'" style="flex:1;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:32px;font-weight:700;cursor:pointer">'+ngHtml(c.katakana)+
      '<span data-r="'+i+'" style="display:none;font-size:18px;font-weight:400;color:#444;margin-top:4px">'+(c.ko_read||"")+'</span></div>'+
-    '<button data-b="'+i+'" type="button" style="width:72px;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:18px;font-weight:700">뜻</button>'+
+    '<button data-bm="'+c.id+'" type="button" aria-label="책갈피" style="width:52px;min-height:52px;border:2px solid #000;border-radius:12px;font-size:20px;background:'+(marks.includes(c.id)?'#000;color:#fff':'#fff')+'">🔖</button>'+'<button data-b="'+i+'" type="button" style="width:72px;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:18px;font-weight:700">뜻</button>'+
    '</div>'+
    '<div data-m="'+i+'" style="display:none;margin-top:12px;border-top:2px solid #000;padding-top:12px;justify-content:space-between;align-items:center;font-size:26px;font-weight:700"><span>'+c.korean+'</span><span>'+c.english+'</span></div>'+
   '</div>').join("");
-  $("allList").style.display="block";$("allBtn").textContent="가타카나 전체 닫기";
+  $("allList").style.display="block";$("allBtn").textContent="가타카나 전체 닫기";applyFilter();
  }else{$("allList").style.display="none";$("allBtn").textContent="가타카나 전체 보기"}
 };
+$("allList").addEventListener("keydown",e=>{if(e.target.id==="numInput"&&e.key==="Enter")$("numGo").click()});
 $("allList").onclick=e=>{
+ if(e.target.closest("#numGo")){const n=parseInt($("numInput").value,10);const el=n?document.getElementById("kc-"+n):null;if(el)el.scrollIntoView({behavior:"smooth",block:"center"});else alert("번호를 확인하세요.");return}
+ const bm=e.target.closest("[data-bm]");
+ if(bm){const id=bm.dataset.bm;marks=marks.includes(id)?marks.filter(x=>x!==id):[...marks,id];localStorage.setItem("jphelper_marks",JSON.stringify(marks));const on=marks.includes(id);bm.style.background=on?"#000":"#fff";bm.style.color=on?"#fff":"#000";applyFilter();return}
+ if(e.target.closest("#markFilter")){onlyMarks=!onlyMarks;e.target.closest("#markFilter").textContent=onlyMarks?"전체 보기":"책갈피만 보기";applyFilter();return}
  const kd=e.target.closest("[data-k]");
  if(kd){speakJa(kd.dataset.k);const r=kd.querySelector("[data-r]");if(r)r.style.display="block";return}
  const bt=e.target.closest("[data-b]");
@@ -330,7 +338,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v12 · 26-11-21 12시 42분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v15 · 26-11-22 00시 58분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
