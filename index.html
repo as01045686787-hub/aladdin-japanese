@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1>일본어 도우미</h1>
+  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v5 · 26-11-21 11시 17분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -178,17 +178,29 @@ function showResult(text,cls){const el=$("result");el.textContent=text;el.classN
 $("translateBtn").onclick=async()=>{const s=$("source").value;showResult("번역 중…","placeholder");try{lastJp=await translate(s);showResult(lastJp)}catch(e){showResult(e.message+" 인터넷 연결을 확인하세요.","placeholder")}};
 $("clearBtn").onclick=()=>{$("source").value="";showResult("","placeholder");lastJp=""};
 $("speakBtn").onclick=()=>{const t=lastJp||$("result").textContent;if(!t||t.startsWith("번역"))return;const u=new SpeechSynthesisUtterance(t);u.lang=/[ぁ-んァ-ン一-龯]/.test(t)?"ja-JP":"ko-KR";speechSynthesis.speak(u)};
+let mic=null;
 function listen(lang,btn){
  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
  if(!SR){alert("이 브라우저는 말하기를 지원하지 않습니다. 크롬을 써 주세요.");return}
- const r=new SR();r.lang=lang;r.interimResults=false;r.maxAlternatives=1;
+ if(mic){mic.want=false;mic.r&&mic.r.stop();return}
  const src=$("source"),ph=src.placeholder;
- r.onstart=()=>{btn.classList.add("on");src.placeholder="듣고 있어요… 말씀해 주세요";};
- const done=()=>{btn.classList.remove("on");src.placeholder=ph;};
- r.onresult=e=>{src.value=e.results[0][0].transcript;};
- r.onerror=e=>{done();if(e.error!=="no-speech"&&e.error!=="aborted")alert("말하기에 실패했습니다. 마이크 권한과 인터넷 연결을 확인하세요.");};
- r.onend=done;
- try{r.start()}catch(err){done();alert("다시 한 번 눌러 주세요.")}
+ const st={want:true,r:null,base:src.value,final:""};
+ mic=st;
+ const finish=()=>{st.want=false;btn.classList.remove("on");src.placeholder=ph;if(mic===st)mic=null};
+ const start=()=>{
+  const r=new SR();st.r=r;
+  r.lang=lang;r.continuous=true;r.interimResults=true;r.maxAlternatives=1;
+  r.onstart=()=>{btn.classList.add("on");src.placeholder="듣고 있어요… 다 말하고 마이크를 다시 누르세요"};
+  r.onresult=e=>{let interim="";for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal)st.final+=t;else interim+=t}src.value=st.base+st.final+interim};
+  r.onerror=e=>{if(e.error==="no-speech"||e.error==="aborted")return;if(e.error==="not-allowed"||e.error==="service-not-allowed"){st.want=false;alert("마이크 권한을 허용해 주세요.")}};
+  r.onend=()=>{
+   if(!st.want){finish();return}
+   st.base=src.value;st.final="";
+   try{start()}catch(err){finish()}
+  };
+  try{r.start()}catch(err){finish();alert("다시 한 번 눌러 주세요.")}
+ };
+ start();
 }
 $("langKo").onclick=()=>listen("ko-KR",$("langKo"));
 $("langJa").onclick=()=>listen("ja-JP",$("langJa"));
@@ -279,7 +291,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v4 · 26-11-21 11시 10분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v5 · 26-11-21 11시 17분</div>';
 }
 new MutationObserver(()=>{
   const t=res.textContent.trim();
