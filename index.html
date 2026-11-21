@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v8 · 26-11-21 11시 52분</span></h1>
+  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v9 · 26-11-21 11시 59분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -132,6 +132,8 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
       <button id="saveStudyBtn" class="btn" type="button">저장</button>
       <button id="deleteBtn" class="btn" type="button">삭제</button>
     </div>
+    <button id="allBtn" class="btn" type="button" style="margin-top:12px">가타카나 전체 보기</button>
+    <div id="allList" style="display:none;margin-top:12px"></div>
   </section>
 
   <!-- 사진 -->
@@ -212,10 +214,10 @@ function renderList(){const q=$("search").value.toLowerCase();$("list").innerHTM
 $("search").oninput=renderList;
 $("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="일본어_단어장.json";a.click();URL.revokeObjectURL(a.href)};
 $("importFile").onchange=async e=>{try{const data=JSON.parse(await e.target.files[0].text());if(Array.isArray(data)){items=[...data,...items];persist();alert("가져왔습니다.")}}catch{alert("올바른 백업 파일이 아닙니다.")}};
-let deck=[],deckIdx=-1,removedIds=JSON.parse(localStorage.getItem("jphelper_removed")||"[]");
+let allCards=[],deck=[],deckIdx=-1,removedIds=JSON.parse(localStorage.getItem("jphelper_removed")||"[]");
 function speakJa(t){const u=new SpeechSynthesisUtterance(t);u.lang="ja-JP";speechSynthesis.speak(u)}
 async function studyOpen(){
- if(!deck.length){const all=await (await fetch("katakana_easy_1000.json")).json();deck=all.filter(x=>!removedIds.includes(x.id))}
+ if(!deck.length){const all=await (await fetch("katakana_easy_1000.json")).json();allCards=all;deck=all.filter(x=>!removedIds.includes(x.id))}
  if(deckIdx<0||!deck[deckIdx])showCard();
 }
 function showCard(){
@@ -227,6 +229,15 @@ function showCard(){
 $("flash").onclick=()=>{if(deckIdx>=0)speakJa(deck[deckIdx].katakana)};
 $("revealBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];$("meaning").textContent=c.english+"\n"+c.korean};
 $("saveStudyBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];items.unshift({ko:c.korean+" ("+c.english+")",jp:c.katakana,created:Date.now()});persist();showCard();$("meaning").textContent="단어장에 저장했습니다."};
+$("allBtn").onclick=async()=>{
+ const open=$("allList").style.display==="none";
+ if(open){
+  if(!allCards.length)allCards=await (await fetch("katakana_easy_1000.json")).json();
+  $("allList").innerHTML=allCards.map(c=>'<div style="padding:10px 0;border-bottom:1px solid #000"><div data-k="'+c.katakana+'" style="font-size:26px;font-weight:700;cursor:pointer">'+c.katakana+'</div><div style="font-size:18px;color:#444">'+c.ko_read+'</div></div>').join("");
+  $("allList").style.display="block";$("allBtn").textContent="가타카나 전체 닫기";
+ }else{$("allList").style.display="none";$("allBtn").textContent="가타카나 전체 보기"}
+};
+$("allList").onclick=e=>{const k=e.target.dataset&&e.target.dataset.k;if(k)speakJa(k)};
 $("deleteBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];removedIds.push(c.id);localStorage.setItem("jphelper_removed",JSON.stringify(removedIds));deck.splice(deckIdx,1);showCard()};
 let selectedPhoto=null;
 function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();}
@@ -307,7 +318,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v8 · 26-11-21 11시 52분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v9 · 26-11-21 11시 59분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
