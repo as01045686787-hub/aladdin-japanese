@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v15 · 26-11-22 00시 58분</span></h1>
+  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v17 · 26-11-22 01시 45분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -338,7 +338,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v15 · 26-11-22 00시 58분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v17 · 26-11-22 01시 45분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
@@ -368,5 +368,46 @@ new MutationObserver(()=>{
 })();
 </script>
 
+<script>
+(function(){
+const list=$("allList");
+function mk(c,i){
+ const on=marks.includes(c.id);
+ return '<div id="kc-'+(i+1)+'" data-id="'+c.id+'" style="border:2px solid #000;border-radius:16px;padding:12px;margin-bottom:10px">'+
+  '<div style="display:flex;align-items:center;gap:10px">'+
+   '<div data-bm="'+c.id+'" style="width:36px;height:36px;flex:none;border:2px solid #000;border-radius:8px;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;background:'+(on?'#000;color:#fff':'#fff')+'">'+(i+1)+'</div>'+
+   '<div data-k="'+c.katakana+'" data-i="'+i+'" style="flex:1;min-width:0;font-size:26px;font-weight:700;text-align:center;white-space:nowrap;cursor:pointer">'+ngHtml(c.katakana)+'</div>'+
+  '</div>'+
+  '<div data-m="'+i+'" style="display:none;margin-top:10px;border-top:2px solid #000;padding-top:10px;justify-content:space-between;align-items:center;font-size:22px;font-weight:700"><span>'+c.korean+'</span><span>'+c.english+'</span></div>'+
+ '</div>';
+}
+function render(){
+ list.innerHTML='<div style="display:flex;gap:8px;margin-bottom:12px"><input id="numInput" type="number" placeholder="번호 입력" style="flex:1;min-height:52px;border:2px solid #000;border-radius:12px;padding:0 14px;font-size:18px;font-family:inherit"><button id="numGo" type="button" aria-label="찾기" style="width:60px;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:20px">🔍</button></div>'+
+  '<button id="markFilter" type="button" style="width:100%;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:18px;font-weight:700;margin-bottom:12px">'+(onlyMarks?"전체 보기":"책갈피만 보기")+'</button>'+
+  allCards.map(mk).join("");
+ applyFilter();
+}
+function fit(){
+ list.querySelectorAll("[data-k]").forEach(el=>{let fs=26;el.style.fontSize=fs+"px";while(el.scrollWidth>el.clientWidth&&fs>12){fs--;el.style.fontSize=fs+"px"}});
+}
+$("allBtn").onclick=async()=>{
+ if(list.style.display==="none"){
+  if(!allCards.length)allCards=await (await fetch("katakana_easy_1000.json?v=17")).json();
+  render();
+  list.style.display="block";$("allBtn").textContent="가타카나 전체 닫기";
+  fit();
+ }else{list.style.display="none";$("allBtn").textContent="가타카나 전체 보기"}
+};
+list.onclick=e=>{
+ const t=e.target;
+ if(t.closest("#numGo")){const n=parseInt($("numInput").value,10);const el=n?document.getElementById("kc-"+n):null;if(el)el.scrollIntoView({behavior:"smooth",block:"center"});else alert("번호를 확인하세요.");return}
+ if(t.closest("#markFilter")){onlyMarks=!onlyMarks;t.closest("#markFilter").textContent=onlyMarks?"전체 보기":"책갈피만 보기";applyFilter();return}
+ const bm=t.closest("[data-bm]");
+ if(bm){const id=bm.dataset.bm;marks=marks.includes(id)?marks.filter(x=>x!==id):[...marks,id];localStorage.setItem("jphelper_marks",JSON.stringify(marks));const on=marks.includes(id);bm.style.background=on?"#000":"#fff";bm.style.color=on?"#fff":"#000";applyFilter();return}
+ const kd=t.closest("[data-k]");
+ if(kd){speakJa(kd.dataset.k);const m=list.querySelector('[data-m="'+kd.dataset.i+'"]');if(m)m.style.display=m.style.display==="flex"?"none":"flex";return}
+};
+})();
+</script>
 </body>
 </html>
