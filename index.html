@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v10 · 26-11-21 12시 22분</span></h1>
+  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v11 · 26-11-21 12시 34분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -233,11 +233,23 @@ $("allBtn").onclick=async()=>{
  const open=$("allList").style.display==="none";
  if(open){
   if(!allCards.length)allCards=await (await fetch("katakana_easy_1000.json?v=10")).json();
-  $("allList").innerHTML=allCards.map(c=>'<div style="padding:10px 0;border-bottom:1px solid #000"><div data-k="'+c.katakana+'" style="font-size:26px;font-weight:700;cursor:pointer">'+c.katakana+'</div><div style="font-size:18px;color:#444">'+(c.ko_read||"")+'</div></div>').join("");
+  $("allList").innerHTML=allCards.map((c,i)=>'<div style="border:2px solid #000;border-radius:16px;padding:14px;margin-bottom:12px">'+
+   '<div style="display:flex;align-items:center;gap:10px">'+
+    '<div data-k="'+c.katakana+'" style="flex:1;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:32px;font-weight:700;cursor:pointer">'+c.katakana+
+     '<span data-r="'+i+'" style="display:none;font-size:18px;font-weight:400;color:#444;margin-top:4px">'+(c.ko_read||"")+'</span></div>'+
+    '<button data-b="'+i+'" type="button" style="width:72px;min-height:52px;border:2px solid #000;border-radius:12px;background:#fff;font-size:18px;font-weight:700">뜻</button>'+
+   '</div>'+
+   '<div data-m="'+i+'" style="display:none;margin-top:12px;border-top:2px solid #000;padding-top:12px;justify-content:space-between;align-items:center;font-size:26px;font-weight:700"><span>'+c.korean+'</span><span>'+c.english+'</span></div>'+
+  '</div>').join("");
   $("allList").style.display="block";$("allBtn").textContent="가타카나 전체 닫기";
  }else{$("allList").style.display="none";$("allBtn").textContent="가타카나 전체 보기"}
 };
-$("allList").onclick=e=>{const k=e.target.dataset&&e.target.dataset.k;if(k)speakJa(k)};
+$("allList").onclick=e=>{
+ const kd=e.target.closest("[data-k]");
+ if(kd){speakJa(kd.dataset.k);const r=kd.querySelector("[data-r]");if(r)r.style.display="block";return}
+ const bt=e.target.closest("[data-b]");
+ if(bt){const m=$("allList").querySelector('[data-m="'+bt.dataset.b+'"]');if(m)m.style.display=m.style.display==="flex"?"none":"flex"}
+};
 $("deleteBtn").onclick=()=>{if(deckIdx<0)return;const c=deck[deckIdx];removedIds.push(c.id);localStorage.setItem("jphelper_removed",JSON.stringify(removedIds));deck.splice(deckIdx,1);showCard()};
 let selectedPhoto=null;
 function usePhoto(f){if(!f)return;selectedPhoto=f;$("preview").src=URL.createObjectURL(f);$("previewWrap").classList.remove("hidden");zoom=1;setZoom();}
@@ -318,7 +330,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v10 · 26-11-21 12시 22분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v11 · 26-11-21 12시 34분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
