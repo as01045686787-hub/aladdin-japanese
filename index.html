@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v7 · 26-11-21 11시 46분</span></h1>
+  <h1 style="font-size:22px;white-space:nowrap">일본어 도우미 <span style="font-size:13px;font-weight:700;color:var(--sub)">v8 · 26-11-21 11시 52분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -126,7 +126,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
   <section id="study" class="panel">
     <h2>복습</h2>
     <div id="flash" class="flash" style="font-size:44px;min-height:150px"></div>
-    <div id="meaning" class="card" style="margin-top:12px;font-size:20px;line-height:1.6;min-height:70px;white-space:pre-wrap"></div>
+    <div id="meaning" class="card" style="margin-top:12px;font-size:32px;font-weight:700;line-height:1.5;min-height:150px;white-space:pre-wrap;text-align:center;display:flex;flex-direction:column;justify-content:center"></div>
     <div class="actions" style="grid-template-columns:1fr 1fr 1fr">
       <button id="revealBtn" class="btn" type="button">뜻</button>
       <button id="saveStudyBtn" class="btn" type="button">저장</button>
@@ -307,7 +307,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v7 · 26-11-21 11시 46분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v8 · 26-11-21 11시 52분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
