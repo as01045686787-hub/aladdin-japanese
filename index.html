@@ -81,7 +81,7 @@ h2{font-size:22px;font-weight:800;margin:14px 2px 12px}
 <body>
 
 <header class="top">
-  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v6 · 26-11-21 11시 25분</span></h1>
+  <h1>일본어 도우미 <span style="font-size:15px;font-weight:700;color:var(--sub)">v7 · 26-11-21 11시 46분</span></h1>
   <button id="installApp" type="button">앱 설치</button>
 </header>
 
@@ -192,7 +192,7 @@ function listen(lang,btn){
  const start=()=>{
   const r=new SR();st.r=r;
   r.lang=lang;r.continuous=true;r.interimResults=true;r.maxAlternatives=1;
-  r.onstart=()=>{btn.classList.add("on");src.placeholder="듣고 있어요… 다 말하고 마이크를 다시 누르세요"};
+  r.onstart=()=>{btn.classList.add("on");src.placeholder="듣는 중…"};
   r.onresult=e=>{let interim="";for(let i=e.resultIndex;i<e.results.length;i++){const t=e.results[i][0].transcript;if(e.results[i].isFinal)st.final+=t;else interim+=t}src.value=st.base+st.final+interim};
   r.onerror=e=>{if(e.error==="no-speech"||e.error==="aborted")return;if(e.error==="not-allowed"||e.error==="service-not-allowed"){st.want=false;alert("마이크 권한을 허용해 주세요.")}};
   r.onend=()=>{
@@ -307,7 +307,7 @@ function render(items){
   if(!items.length){box.innerHTML="";return;}
   box.innerHTML='<div style="font-weight:500;margin-bottom:6px;">읽기 확인</div>'+
     items.map(it=>'<div style="display:flex;justify-content:space-between;gap:8px;padding:4px 0;"><span>'+esc(it.t)+'</span><span>'+(it.reading?esc(it.reading):"-")+'</span><span>'+esc(it.note)+'</span></div>').join("")+
-    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: KANJIDIC2, JMdict (EDRDG, CC BY-SA) · v6 · 26-11-21 11시 25분</div>';
+    '<div style="margin-top:8px;font-size:12px;color:#777;">출처: EDRDG (CC BY-SA) · v7 · 26-11-21 11시 46분</div>';
 }
 function stemsFor(kuns,after){const out=[];for(const k of kuns){for(let n=Math.min(k.length-1,after.length);n>=1;n--){if(k.endsWith(after.slice(0,n))){const s=k.slice(0,k.length-n);if(s&&!out.includes(s))out.push(s);break}}}return out}
 function rubyCands(run,after){
@@ -332,7 +332,7 @@ rv.onclick=e=>{const r=e.target.closest&&e.target.closest("ruby.jr");if(!r)retur
 new MutationObserver(()=>{
   const t=res.textContent.trim();
   if(!t||t.startsWith("번역")){render([]);rv.innerHTML="";return;}
-  loadDicts().then(()=>{render(check(t));showRuby(t)}).catch(()=>{box.textContent="사전 파일을 불러오지 못했습니다. kanji_readings.json, word_readings.json을 같은 폴더에 올렸는지 확인하세요.";});
+  loadDicts().then(()=>{render(check(t));showRuby(t)}).catch(()=>{box.textContent="사전 파일을 못 불러왔습니다.";});
 }).observe(res,{childList:true,characterData:true,subtree:true});
 })();
 </script>
